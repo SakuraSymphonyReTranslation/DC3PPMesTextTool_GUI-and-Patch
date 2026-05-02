@@ -1,0 +1,57 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.25
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x86'
+-- The C compiler identification is MSVC 19.44.35222.0
+-- The CXX compiler identification is MSVC 19.44.35222.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (13.1s)
+-- Generating done (0.4s)
+-- Build files have been written to: G:/Games/DC4/DC4Patch a saus kode 22-2/DC4Patch a/build
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35222.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+[  8%] Building CXX object CMakeFiles/detours.dir/Detours/src/detours.cpp.obj
+detours.cpp
+[ 16%] Building CXX object CMakeFiles/detours.dir/Detours/src/modules.cpp.obj
+modules.cpp
+[ 25%] Building CXX object CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj
+disasm.cpp
+[ 33%] Building CXX object CMakeFiles/detours.dir/Detours/src/image.cpp.obj
+image.cpp
+[ 41%] Building CXX object CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj
+creatwth.cpp
+[ 50%] Building CXX object CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj
+disolx86.cpp
+[ 58%] Linking CXX static library detours.lib
+[ 58%] Built target detours
+[ 66%] Building CXX object CMakeFiles/DC4Patch.dir/src/dc4patch.cpp.obj
+dc4patch.cpp
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(313): error C2535: 'int FontManager::GetBacklogNameFontSize(void) const': member function already defined or declared
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(307): note: see declaration of 'FontManager::GetBacklogNameFontSize'
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(314): error C2535: 'int FontManager::GetBacklogXOffset(void) const': member function already defined or declared
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(308): note: see declaration of 'FontManager::GetBacklogXOffset'
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(315): error C2535: 'int FontManager::GetBacklogYOffset(void) const': member function already defined or declared
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(310): note: see declaration of 'FontManager::GetBacklogYOffset'
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(316): error C2535: 'int FontManager::GetBacklogLineSpacing(void) const': member function already defined or declared
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(309): note: see declaration of 'FontManager::GetBacklogLineSpacing'
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(317): error C2535: 'int FontManager::GetBacklogNameYOffset(void) const': member function already defined or declared
+G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\src\dc4patch.cpp(312): note: see declaration of 'FontManager::GetBacklogNameYOffset'
+NMAKE : fatal error U1077: '"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\DC4Patch.dir\src\dc4patch.cpp.obj.d --working-dir="G:\Games\DC4\DC4Patch a saus kode 22-2\DC4Patch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @C:\Users\adamb\AppData\Local\Temp\nm162C.tmp' : return code '0x2'
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX86\x86\nmake.exe" -s -f CMakeFiles\DC4Patch.dir\build.make /nologo -SL                 CMakeFiles\DC4Patch.dir\build' : return code '0x2'
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX86\x86\nmake.exe" -s -f CMakeFiles\Makefile2 /nologo -S                  all' : return code '0x2'
+Stop.
+The system cannot find the file specified.

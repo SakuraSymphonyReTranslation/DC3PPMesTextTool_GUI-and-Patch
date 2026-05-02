@@ -1,0 +1,5 @@
+H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/detours.dir
+H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/DC4Patch.dir
+H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/DC4Launcher.dir
+H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/edit_cache.dir
+H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/rebuild_cache.dir

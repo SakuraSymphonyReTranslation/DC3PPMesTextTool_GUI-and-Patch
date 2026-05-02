@@ -1,0 +1,14 @@
+E:\message only tools\DC4MesTextTool_GUI\obj\Debug\net6.0-windows\DC4MesTextTool_GUI.GeneratedMSBuildEditorConfig.editorconfig
+E:\message only tools\DC4MesTextTool_GUI\obj\Debug\net6.0-windows\DC4MesTextTool_GUI.AssemblyInfoInputs.cache
+E:\message only tools\DC4MesTextTool_GUI\obj\Debug\net6.0-windows\DC4MesTextTool_GUI.AssemblyInfo.cs
+E:\message only tools\DC4MesTextTool_GUI\obj\Debug\net6.0-windows\DC4MesTextTool_GUI.csproj.CoreCompileInputs.cache
+E:\message only tools\DC4MesTextTool_GUI\bin\Debug\net6.0-windows\DC4MesTextTool_GUI.exe
+E:\message only tools\DC4MesTextTool_GUI\bin\Debug\net6.0-windows\DC4MesTextTool_GUI.deps.json
+E:\message only tools\DC4MesTextTool_GUI\bin\Debug\net6.0-windows\DC4MesTextTool_GUI.runtimeconfig.json
+E:\message only tools\DC4MesTextTool_GUI\bin\Debug\net6.0-windows\DC4MesTextTool_GUI.dll
+E:\message only tools\DC4MesTextTool_GUI\bin\Debug\net6.0-windows\DC4MesTextTool_GUI.pdb
+E:\message only tools\DC4MesTextTool_GUI\obj\Debug\net6.0-windows\DC4MesTextTool_GUI.dll
+E:\message only tools\DC4MesTextTool_GUI\obj\Debug\net6.0-windows\refint\DC4MesTextTool_GUI.dll
+E:\message only tools\DC4MesTextTool_GUI\obj\Debug\net6.0-windows\DC4MesTextTool_GUI.pdb
+E:\message only tools\DC4MesTextTool_GUI\obj\Debug\net6.0-windows\DC4MesTextTool_GUI.genruntimeconfig.cache
+E:\message only tools\DC4MesTextTool_GUI\obj\Debug\net6.0-windows\ref\DC4MesTextTool_GUI.dll
