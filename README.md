@@ -159,15 +159,3 @@ If original MES file is missing, that JSON file is skipped.
 
 - Active build folder: `DC3PPPatch a\build`
 - Final ready release folder: `DC3PPPatch a\build\Released`
-
-## Release Description (for GitHub Releases)
-
-```text
-Initial public release.
-Includes:
-Released_patch.rar
-DC3PPMesTextTool_GUI.rar
-Important: Use the custom DC3PPLauncher from build/Released to run the patch properly.
-
-The file doesn't contain any viruses; if your antivirus somehow detect it as anomaly.. it's just a false alarm. Trust me, I made this patch for everyone who wants to create or modify the Da Capo 3 Platinum Partner patch. I have no intention of harming anyone.
-```
