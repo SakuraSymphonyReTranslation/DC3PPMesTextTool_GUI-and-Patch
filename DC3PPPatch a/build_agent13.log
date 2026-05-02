@@ -1,0 +1,57 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.27
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x86'
+Configuring CMake...
+-- The C compiler identification is MSVC 19.44.35223.0
+-- The CXX compiler identification is MSVC 19.44.35223.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (3.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/vns/DC4/DC4Patch a saus kode 24-2/DC4Patch a saus kode 23-2/DC4Patch a/build
+Compiling...
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35223.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+[  8%] Building CXX object CMakeFiles/detours.dir/Detours/src/detours.cpp.obj
+detours.cpp
+[ 16%] Building CXX object CMakeFiles/detours.dir/Detours/src/modules.cpp.obj
+modules.cpp
+[ 25%] Building CXX object CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj
+disasm.cpp
+[ 33%] Building CXX object CMakeFiles/detours.dir/Detours/src/image.cpp.obj
+image.cpp
+[ 41%] Building CXX object CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj
+creatwth.cpp
+[ 50%] Building CXX object CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj
+disolx86.cpp
+[ 58%] Linking CXX static library detours.lib
+[ 58%] Built target detours
+[ 66%] Building CXX object CMakeFiles/DC4Patch.dir/src/dc4patch.cpp.obj
+dc4patch.cpp
+D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\src\dc4patch.cpp(3069): error C2065: 'isName': undeclared identifier
+D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\src\dc4patch.cpp(3069): error C2065: 's_lastTmHeight_ExtTextOut': undeclared identifier
+D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\src\dc4patch.cpp(3072): error C2065: 'isName': undeclared identifier
+D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\src\dc4patch.cpp(3082): error C2065: 'isName': undeclared identifier
+D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\src\dc4patch.cpp(3098): error C2065: 'isName': undeclared identifier
+D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\src\dc4patch.cpp(3099): error C2065: 's_lastTmHeight_ExtTextOut': undeclared identifier
+D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\src\dc4patch.cpp(3101): error C2065: 's_lastTmHeight_ExtTextOut': undeclared identifier
+D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\src\dc4patch.cpp(3109): error C2065: 'isName': undeclared identifier
+D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\src\dc4patch.cpp(3119): error C2065: 'isName': undeclared identifier
+NMAKE : fatal error U1077: '"C:\Program Files\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\DC4Patch.dir\src\dc4patch.cpp.obj.d --working-dir="D:\vns\DC4\DC4Patch a saus kode 24-2\DC4Patch a saus kode 23-2\DC4Patch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~2\2022\COMMUN~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @C:\Users\Atho\AppData\Local\Temp\nmB084.tmp' : return code '0x2'
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\HostX86\x86\nmake.exe" -s -f CMakeFiles\DC4Patch.dir\build.make /nologo -SL                 CMakeFiles\DC4Patch.dir\build' : return code '0x2'
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\bin\HostX86\x86\nmake.exe" -s -f CMakeFiles\Makefile2 /nologo -S                  all' : return code '0x2'
+Stop.

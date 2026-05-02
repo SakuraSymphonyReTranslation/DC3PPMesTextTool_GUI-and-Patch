@@ -1,0 +1,17 @@
+The system cannot find the path specified.
+CMake Error at CMakeLists.txt:2 (project):
+  Running
+
+   'nmake' '-?'
+
+  failed with:
+
+   no such file or directory
+
+
+CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+CMake Error: CMAKE_CXX_COMPILER not set, after EnableLanguage
+-- Configuring incomplete, errors occurred!
+'nmake' is not recognized as an internal or external command,
+operable program or batch file.
+The system cannot find the drive specified.

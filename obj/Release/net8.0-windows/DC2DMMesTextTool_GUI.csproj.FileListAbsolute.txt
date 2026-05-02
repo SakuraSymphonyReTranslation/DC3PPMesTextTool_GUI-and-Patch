@@ -1,0 +1,14 @@
+D:\DC4MesTextTool_GUI - Copy\bin\Release\net8.0-windows\DC2DMMesTextTool_GUI.exe
+D:\DC4MesTextTool_GUI - Copy\bin\Release\net8.0-windows\DC2DMMesTextTool_GUI.deps.json
+D:\DC4MesTextTool_GUI - Copy\bin\Release\net8.0-windows\DC2DMMesTextTool_GUI.runtimeconfig.json
+D:\DC4MesTextTool_GUI - Copy\bin\Release\net8.0-windows\DC2DMMesTextTool_GUI.dll
+D:\DC4MesTextTool_GUI - Copy\bin\Release\net8.0-windows\DC2DMMesTextTool_GUI.pdb
+D:\DC4MesTextTool_GUI - Copy\obj\Release\net8.0-windows\DC2DMMesTextTool_GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\DC4MesTextTool_GUI - Copy\obj\Release\net8.0-windows\DC2DMMesTextTool_GUI.AssemblyInfoInputs.cache
+D:\DC4MesTextTool_GUI - Copy\obj\Release\net8.0-windows\DC2DMMesTextTool_GUI.AssemblyInfo.cs
+D:\DC4MesTextTool_GUI - Copy\obj\Release\net8.0-windows\DC2DMMesTextTool_GUI.csproj.CoreCompileInputs.cache
+D:\DC4MesTextTool_GUI - Copy\obj\Release\net8.0-windows\DC2DMMesTextTool_GUI.dll
+D:\DC4MesTextTool_GUI - Copy\obj\Release\net8.0-windows\refint\DC2DMMesTextTool_GUI.dll
+D:\DC4MesTextTool_GUI - Copy\obj\Release\net8.0-windows\DC2DMMesTextTool_GUI.pdb
+D:\DC4MesTextTool_GUI - Copy\obj\Release\net8.0-windows\DC2DMMesTextTool_GUI.genruntimeconfig.cache
+D:\DC4MesTextTool_GUI - Copy\obj\Release\net8.0-windows\ref\DC2DMMesTextTool_GUI.dll

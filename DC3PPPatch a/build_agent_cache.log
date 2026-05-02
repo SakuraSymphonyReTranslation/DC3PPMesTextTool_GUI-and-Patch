@@ -1,0 +1,53 @@
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.14.27
+** Copyright (c) 2025 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x86'
+Configuring CMake...
+-- The C compiler identification is MSVC 19.44.35223.0
+-- The CXX compiler identification is MSVC 19.44.35223.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (4.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/vns/DC4/DC4Patch a saus kode 24-2/DC4Patch a saus kode 23-2/DC4Patch a/build
+Compiling...
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35223.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+[  8%] Building CXX object CMakeFiles/detours.dir/Detours/src/detours.cpp.obj
+detours.cpp
+[ 16%] Building CXX object CMakeFiles/detours.dir/Detours/src/modules.cpp.obj
+modules.cpp
+[ 25%] Building CXX object CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj
+disasm.cpp
+[ 33%] Building CXX object CMakeFiles/detours.dir/Detours/src/image.cpp.obj
+image.cpp
+[ 41%] Building CXX object CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj
+creatwth.cpp
+[ 50%] Building CXX object CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj
+disolx86.cpp
+[ 58%] Linking CXX static library detours.lib
+[ 58%] Built target detours
+[ 66%] Building CXX object CMakeFiles/DC4Patch.dir/src/dc4patch.cpp.obj
+dc4patch.cpp
+[ 75%] Linking CXX shared library DC4Patch.dll
+[ 75%] Built target DC4Patch
+[ 83%] Building CXX object CMakeFiles/DC4Launcher.dir/src/launcher.cpp.obj
+launcher.cpp
+[ 91%] Building RC object CMakeFiles/DC4Launcher.dir/src/launcher.rc.res
+Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+[100%] Linking CXX executable DC4Launcher.exe
+[100%] Built target DC4Launcher
+Build SUCCESS

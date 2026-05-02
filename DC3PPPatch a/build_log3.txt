@@ -1,0 +1,59 @@
+==========================================
+Building DC4 Patch (Launcher + DLL)
+==========================================
+[1/2] Configuring CMake...
+-- The C compiler identification is MSVC 19.44.35222.0
+-- The CXX compiler identification is MSVC 19.44.35222.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (11.9s)
+-- Generating done (0.3s)
+-- Build files have been written to: H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build
+[2/2] Compiling...
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35222.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+[  8%] Building CXX object CMakeFiles/detours.dir/Detours/src/detours.cpp.obj
+detours.cpp
+[ 16%] Building CXX object CMakeFiles/detours.dir/Detours/src/modules.cpp.obj
+modules.cpp
+[ 25%] Building CXX object CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj
+disasm.cpp
+[ 33%] Building CXX object CMakeFiles/detours.dir/Detours/src/image.cpp.obj
+image.cpp
+[ 41%] Building CXX object CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj
+creatwth.cpp
+[ 50%] Building CXX object CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj
+disolx86.cpp
+[ 58%] Linking CXX static library detours.lib
+[ 58%] Built target detours
+[ 66%] Building CXX object CMakeFiles/DC4Patch.dir/src/dc4patch.cpp.obj
+dc4patch.cpp
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(25): error C2065: 'g_inBacklogRender': undeclared identifier
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(27): error C2065: 'g_inBacklogRender': undeclared identifier
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(2306): error C2660: 'FontManager::SetBacklogOffsets': function does not take 7 arguments
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(375): note: see declaration of 'FontManager::SetBacklogOffsets'
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(2306): note: while trying to match the argument list '(int, int, int, int, int, int, int)'
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(2833): error C2017: illegal escape sequence
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(2833): error C2065: 'n': undeclared identifier
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(2833): error C2146: syntax error: missing ';' before identifier 'DetourAttach'
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(2880): error C2017: illegal escape sequence
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(2880): error C2065: 'n': undeclared identifier
+H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\src\dc4patch.cpp(2880): error C2146: syntax error: missing ';' before identifier 'DetourDetach'
+NMAKE : fatal error U1077: '"C:\Program Files\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\DC4Patch.dir\src\dc4patch.cpp.obj.d --working-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @C:\Users\adamb\AppData\Local\Temp\nm7AB7.tmp' : return code '0x2'
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX86\x86\nmake.exe" -s -f CMakeFiles\DC4Patch.dir\build.make /nologo -SL                 CMakeFiles\DC4Patch.dir\build' : return code '0x2'
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.44.35207\bin\HostX86\x86\nmake.exe" -s -f CMakeFiles\Makefile2 /nologo -S                  all' : return code '0x2'
+Stop.
+[ERROR] Compilation failed.
+Press any key to continue . . . 

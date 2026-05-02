@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/src/launcher.rc
+resource.h
+H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/src/resource.h
+
+H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/src/resource.h
+

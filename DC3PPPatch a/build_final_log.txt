@@ -1,0 +1,67 @@
+==========================================
+Building DC4 Patch (Launcher + DLL)
+==========================================
+The process cannot access the file because it is being used by another process.
+A subdirectory or file build already exists.
+[1/2] Configuring CMake...
+-- The C compiler identification is MSVC 19.44.35222.0
+-- The CXX compiler identification is MSVC 19.44.35222.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (15.7s)
+-- Generating done (0.6s)
+-- Build files have been written to: H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build
+[2/2] Compiling...
+
+Microsoft (R) Program Maintenance Utility Version 14.44.35222.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+[  8%] Building CXX object CMakeFiles/detours.dir/Detours/src/detours.cpp.obj
+detours.cpp
+[ 16%] Building CXX object CMakeFiles/detours.dir/Detours/src/modules.cpp.obj
+modules.cpp
+[ 25%] Building CXX object CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj
+disasm.cpp
+[ 33%] Building CXX object CMakeFiles/detours.dir/Detours/src/image.cpp.obj
+image.cpp
+[ 41%] Building CXX object CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj
+creatwth.cpp
+[ 50%] Building CXX object CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj
+disolx86.cpp
+[ 58%] Linking CXX static library detours.lib
+[ 58%] Built target detours
+[ 66%] Building CXX object CMakeFiles/DC4Patch.dir/src/dc4patch.cpp.obj
+dc4patch.cpp
+[ 75%] Linking CXX shared library DC2DMPatch.dll
+[ 75%] Built target DC4Patch
+[ 83%] Building CXX object CMakeFiles/DC4Launcher.dir/src/launcher.cpp.obj
+launcher.cpp
+[ 91%] Building RC object CMakeFiles/DC4Launcher.dir/src/launcher.rc.res
+Microsoft (R) Windows (R) Resource Compiler Version 10.0.10011.16384
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+[100%] Linking CXX executable DC2DMLauncher.exe
+[100%] Built target DC4Launcher
+
+==========================================
+[SUCCESS] Build completed!
+==========================================
+
+Output files:
+  - build\DC4Launcher.exe
+  - build\DC4Patch.dll
+
+Installation:
+  1. Copy BOTH files to the DC4 game folder
+  2. Run DC4Launcher.exe instead of DC4.EXE
+
+Press any key to continue . . . 

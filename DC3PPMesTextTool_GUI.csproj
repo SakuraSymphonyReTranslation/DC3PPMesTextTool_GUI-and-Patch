@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>DC2DMMesTextTool_GUI</RootNamespace>
+    <StartupObject>DC2DMMesTextTool_GUI.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DC4Patch a\**" />
+    <EmbeddedResource Remove="DC4Patch a\**" />
+    <None Remove="DC4Patch a\**" />
+  </ItemGroup>
+
+</Project>
