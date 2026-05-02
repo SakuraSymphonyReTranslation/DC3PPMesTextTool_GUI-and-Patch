@@ -85,7 +85,7 @@ Steps:
 1. In `Input MES/JSON`, select a `.json` file.
 2. Make sure original `.mes` with the same base filename is in the same folder.
 3. Set output `.mes` path (optional).
-4. Set `Word Wrap Width` (default: `67`).
+4. Set `Word Wrap Width` (default: `60`) if 60 isn't enough you can change its value to fit textbox.
 5. Click `Import (JSON -> MES)`.
 
 ## CLI Tutorial
