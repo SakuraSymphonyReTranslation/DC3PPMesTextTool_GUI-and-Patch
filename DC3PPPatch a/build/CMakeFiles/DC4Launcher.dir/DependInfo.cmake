@@ -8,18 +8,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_RC
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/src/launcher.rc" "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/DC4Launcher.dir/src/launcher.rc.res"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/src/launcher.rc" "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/DC4Launcher.dir/src/launcher.rc.res"
   )
 
 # The include file search paths:
 set(CMAKE_RC_TARGET_INCLUDE_PATH
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/Detours/src"
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/src"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/Detours/src"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/src"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/src/launcher.cpp" "CMakeFiles/DC4Launcher.dir/src/launcher.cpp.obj" "msvc" "CMakeFiles/DC4Launcher.dir/src/launcher.cpp.obj.d"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/src/launcher.cpp" "CMakeFiles/DC4Launcher.dir/src/launcher.cpp.obj" "msvc" "CMakeFiles/DC4Launcher.dir/src/launcher.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

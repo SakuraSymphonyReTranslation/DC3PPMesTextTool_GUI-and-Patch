@@ -121,7 +121,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake"
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/CMakeLists.txt"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/CMakeLists.txt"
   "CMakeFiles/4.3.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/4.3.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.3.0-rc1/CMakeRCCompiler.cmake"

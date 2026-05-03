@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/Detours/src/creatwth.cpp" "CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj.d"
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/Detours/src/detours.cpp" "CMakeFiles/detours.dir/Detours/src/detours.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/detours.cpp.obj.d"
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/Detours/src/disasm.cpp" "CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj.d"
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/Detours/src/disolx86.cpp" "CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj.d"
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/Detours/src/image.cpp" "CMakeFiles/detours.dir/Detours/src/image.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/image.cpp.obj.d"
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/Detours/src/modules.cpp" "CMakeFiles/detours.dir/Detours/src/modules.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/modules.cpp.obj.d"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/Detours/src/creatwth.cpp" "CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj.d"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/Detours/src/detours.cpp" "CMakeFiles/detours.dir/Detours/src/detours.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/detours.cpp.obj.d"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/Detours/src/disasm.cpp" "CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj.d"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/Detours/src/disolx86.cpp" "CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj.d"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/Detours/src/image.cpp" "CMakeFiles/detours.dir/Detours/src/image.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/image.cpp.obj.d"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/Detours/src/modules.cpp" "CMakeFiles/detours.dir/Detours/src/modules.cpp.obj" "msvc" "CMakeFiles/detours.dir/Detours/src/modules.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

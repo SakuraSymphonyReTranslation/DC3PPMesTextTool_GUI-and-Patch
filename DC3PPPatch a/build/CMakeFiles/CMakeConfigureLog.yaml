@@ -41,7 +41,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/"
       - "C:/Program Files/Microsoft/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
@@ -60,6 +59,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/"
       - "C:/Users/adamb/.cargo/bin/"
@@ -73,7 +73,6 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -96,7 +95,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -129,7 +127,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -174,7 +171,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -207,7 +203,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -252,7 +247,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
       
       The C compiler identification is MSVC, found in:
-        H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/4.3.0-rc1/CompilerIdC/CMakeCCompilerId.exe
+        H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/4.3.0-rc1/CompilerIdC/CMakeCCompilerId.exe
       
   -
     kind: "message-v1"
@@ -264,7 +259,7 @@ events:
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
-        Note: including file: H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        Note: including file: H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Note: including file: "
   -
@@ -302,7 +297,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/"
       - "C:/Program Files/Microsoft/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
@@ -321,6 +315,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/"
       - "C:/Users/adamb/.cargo/bin/"
@@ -334,7 +329,6 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -357,7 +351,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -390,7 +383,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -430,7 +422,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/"
       - "C:/Program Files/Microsoft/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
@@ -449,6 +440,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/"
       - "C:/Users/adamb/.cargo/bin/"
@@ -462,7 +454,6 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -507,9 +498,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/lld-link"
-      - "C:/Program Files/PowerShell/7/lld-link.com"
-      - "C:/Program Files/PowerShell/7/lld-link.exe"
-      - "C:/Program Files/PowerShell/7/lld-link"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/lld-link.com"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/lld-link.exe"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/lld-link"
@@ -564,6 +552,9 @@ events:
       - "C:/Program Files (x86)/pcsuite/lld-link.com"
       - "C:/Program Files (x86)/pcsuite/lld-link.exe"
       - "C:/Program Files (x86)/pcsuite/lld-link"
+      - "C:/Program Files/PowerShell/7/lld-link.com"
+      - "C:/Program Files/PowerShell/7/lld-link.exe"
+      - "C:/Program Files/PowerShell/7/lld-link"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/lld-link.com"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/lld-link.exe"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/lld-link"
@@ -603,9 +594,6 @@ events:
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link.com"
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link.exe"
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link"
@@ -634,7 +622,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -667,7 +654,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -705,7 +691,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/"
       - "C:/Program Files/Microsoft/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
@@ -724,6 +709,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/"
       - "C:/Users/adamb/.cargo/bin/"
@@ -737,7 +723,6 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -760,7 +745,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -793,7 +777,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -831,7 +814,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/"
       - "C:/Program Files/Microsoft/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
@@ -850,6 +832,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/"
       - "C:/Users/adamb/.cargo/bin/"
@@ -863,7 +846,6 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -907,7 +889,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -940,7 +921,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -978,7 +958,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/"
       - "C:/Program Files/Microsoft/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
@@ -997,6 +976,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/"
       - "C:/Users/adamb/.cargo/bin/"
@@ -1010,7 +990,6 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -1033,7 +1012,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1066,7 +1044,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -1110,7 +1087,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1143,7 +1119,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -1188,7 +1163,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1221,7 +1195,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -1266,7 +1239,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
       
       The CXX compiler identification is MSVC, found in:
-        H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/4.3.0-rc1/CompilerIdCXX/CMakeCXXCompilerId.exe
+        H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/4.3.0-rc1/CompilerIdCXX/CMakeCXXCompilerId.exe
       
   -
     kind: "message-v1"
@@ -1278,7 +1251,7 @@ events:
     message: |
       Detecting CXX compiler /showIncludes prefix:
         main.c
-        Note: including file: H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        Note: including file: H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Note: including file: "
   -
@@ -1316,7 +1289,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/"
       - "C:/Program Files/Microsoft/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
@@ -1335,6 +1307,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/"
       - "C:/Users/adamb/.cargo/bin/"
@@ -1348,7 +1321,6 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -1393,9 +1365,6 @@ events:
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/lld-link"
-      - "C:/Program Files/PowerShell/7/lld-link.com"
-      - "C:/Program Files/PowerShell/7/lld-link.exe"
-      - "C:/Program Files/PowerShell/7/lld-link"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/lld-link.com"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/lld-link.exe"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/lld-link"
@@ -1450,6 +1419,9 @@ events:
       - "C:/Program Files (x86)/pcsuite/lld-link.com"
       - "C:/Program Files (x86)/pcsuite/lld-link.exe"
       - "C:/Program Files (x86)/pcsuite/lld-link"
+      - "C:/Program Files/PowerShell/7/lld-link.com"
+      - "C:/Program Files/PowerShell/7/lld-link.exe"
+      - "C:/Program Files/PowerShell/7/lld-link"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/lld-link.com"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/lld-link.exe"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/lld-link"
@@ -1489,9 +1461,6 @@ events:
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link.com"
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link.exe"
       - "C:/Users/adamb/AppData/Roaming/npm/lld-link"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/lld-link"
@@ -1520,7 +1489,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1553,7 +1521,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -1594,7 +1561,6 @@ events:
       - "C:/Windows/Microsoft.NET/Framework/v4.0.30319/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/Tools/"
-      - "C:/Program Files/PowerShell/7/"
       - "C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler/"
       - "C:/Program Files/Microsoft/jdk-25.0.2.10-hotspot/bin/"
       - "C:/Windows/System32/"
@@ -1613,6 +1579,7 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/nodejs/"
       - "C:/Program Files (x86)/pcsuite/"
+      - "C:/Program Files/PowerShell/7/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/Scripts/"
       - "C:/Users/adamb/AppData/Local/Programs/Python/Python311/"
       - "C:/Users/adamb/.cargo/bin/"
@@ -1626,7 +1593,6 @@ events:
       - "C:/Users/adamb/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.0.1-full_build/bin/"
       - "C:/Users/adamb/.dotnet/tools/"
       - "C:/Users/adamb/AppData/Roaming/npm/"
-      - "C:/Users/adamb/.antigravity/extensions/ms-python.debugpy-2025.18.0-win32-x64/bundled/scripts/noConfigScripts/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/"
       - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/VC/Linux/bin/ConnectionManagerExe/"
@@ -1682,7 +1648,6 @@ events:
         - "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\Tools\\"
-        - "C:\\Program Files\\PowerShell\\7"
         - "C:\\Program Files (x86)\\Common Files\\Intel\\Shared Libraries\\redist\\intel64\\compiler"
         - "C:\\Program Files\\Microsoft\\jdk-25.0.2.10-hotspot\\bin"
         - "C:\\WINDOWS\\system32"
@@ -1715,7 +1680,6 @@ events:
         - "C:\\Users\\adamb\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\\ffmpeg-8.0.1-full_build\\bin"
         - "C:\\Users\\adamb\\.dotnet\\tools"
         - "C:\\Users\\adamb\\AppData\\Roaming\\npm"
-        - "c:\\Users\\adamb\\.antigravity\\extensions\\ms-python.debugpy-2025.18.0-win32-x64\\bundled\\scripts\\noConfigScripts"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja"
         - "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe"
@@ -1735,8 +1699,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/CMakeScratch/TryCompile-f7n871"
-      binary: "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/CMakeScratch/TryCompile-f7n871"
+      source: "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/CMakeScratch/TryCompile-6bsq22"
+      binary: "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/CMakeScratch/TryCompile-6bsq22"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -1746,33 +1710,33 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/CMakeScratch/TryCompile-f7n871'
+        Change Dir: 'H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/CMakeScratch/TryCompile-6bsq22'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_b8df6\\fast
-        	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_b8df6.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b8df6.dir\\build
-        Building C object CMakeFiles/cmTC_b8df6.dir/CMakeCCompilerABI.c.obj
-        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_b8df6.dir\\CMakeCCompilerABI.c.obj.d --working-dir="H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f7n871" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm814.tmp
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_c8ed8\\fast
+        	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_c8ed8.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_c8ed8.dir\\build
+        Building C object CMakeFiles/cmTC_c8ed8.dir/CMakeCCompilerABI.c.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_c8ed8.dir\\CMakeCCompilerABI.c.obj.d --working-dir="H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6bsq22" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm42A9.tmp
         CMakeCCompilerABI.c
-        Linking C executable cmTC_b8df6.exe
-        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_b8df6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b8df6.dir\\objects1.rsp @C:\\Users\\adamb\\AppData\\Local\\Temp\\nmC8A.tmp
+        Linking C executable cmTC_c8ed8.exe
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_c8ed8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_c8ed8.dir\\objects1.rsp @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm46F0.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_b8df6.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_b8df6.dir/embed.manifest
+        Create CMakeFiles\\cmTC_c8ed8.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_c8ed8.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b8df6.dir/manifest.res CMakeFiles\\cmTC_b8df6.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_c8ed8.dir/manifest.res CMakeFiles\\cmTC_c8ed8.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b8df6.dir\\objects1.rsp /out:cmTC_b8df6.exe /implib:cmTC_b8df6.lib /pdb:H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f7n871\\cmTC_b8df6.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b8df6.dir/intermediate.manifest CMakeFiles\\cmTC_b8df6.dir/manifest.res
+        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_c8ed8.dir\\objects1.rsp /out:cmTC_c8ed8.exe /implib:cmTC_c8ed8.lib /pdb:H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6bsq22\\cmTC_c8ed8.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c8ed8.dir/intermediate.manifest CMakeFiles\\cmTC_c8ed8.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_b8df6.dir/intermediate.manifest /out:CMakeFiles\\cmTC_b8df6.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_c8ed8.dir/intermediate.manifest /out:CMakeFiles\\cmTC_c8ed8.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b8df6.dir/manifest.res CMakeFiles\\cmTC_b8df6.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_c8ed8.dir/manifest.res CMakeFiles\\cmTC_c8ed8.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b8df6.dir\\objects1.rsp /out:cmTC_b8df6.exe /implib:cmTC_b8df6.lib /pdb:H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f7n871\\cmTC_b8df6.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b8df6.dir/intermediate.manifest CMakeFiles\\cmTC_b8df6.dir/manifest.res
-        FINAL LINK: command "C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b8df6.dir\\objects1.rsp /out:cmTC_b8df6.exe /implib:cmTC_b8df6.lib /pdb:H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-f7n871\\cmTC_b8df6.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b8df6.dir/intermediate.manifest CMakeFiles\\cmTC_b8df6.dir/manifest.res" failed (exit code 1168) with the following output:
-        LINK : fatal error LNK1168: cannot open cmTC_b8df6.exe for writing\x0d
-        NMAKE : fatal error U1077: '"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_b8df6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b8df6.dir\\objects1.rsp @C:\\Users\\adamb\\AppData\\Local\\Temp\\nmC8A.tmp' : return code '0xffffffff'
+        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_c8ed8.dir\\objects1.rsp /out:cmTC_c8ed8.exe /implib:cmTC_c8ed8.lib /pdb:H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6bsq22\\cmTC_c8ed8.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c8ed8.dir/intermediate.manifest CMakeFiles\\cmTC_c8ed8.dir/manifest.res
+        FINAL LINK: command "C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_c8ed8.dir\\objects1.rsp /out:cmTC_c8ed8.exe /implib:cmTC_c8ed8.lib /pdb:H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6bsq22\\cmTC_c8ed8.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_c8ed8.dir/intermediate.manifest CMakeFiles\\cmTC_c8ed8.dir/manifest.res" failed (exit code 1104) with the following output:
+        LINK : fatal error LNK1104: cannot open file 'cmTC_c8ed8.exe'\x0d
+        NMAKE : fatal error U1077: '"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_c8ed8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_c8ed8.dir\\objects1.rsp @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm46F0.tmp' : return code '0xffffffff'
         Stop.
-        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_b8df6.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b8df6.dir\\build' : return code '0x2'
+        NMAKE : fatal error U1077: '"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_c8ed8.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_c8ed8.dir\\build' : return code '0x2'
         Stop.
         
       exitCode: 2
@@ -1784,8 +1748,8 @@ events:
     checks:
       - "Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe"
     directories:
-      source: "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/CMakeScratch/TryCompile-ijp04u"
-      binary: "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/CMakeScratch/TryCompile-ijp04u"
+      source: "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/CMakeScratch/TryCompile-18gno8"
+      binary: "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/CMakeScratch/TryCompile-18gno8"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -1795,28 +1759,28 @@ events:
       variable: "CMAKE_C_COMPILER_WORKS"
       cached: true
       stdout: |
-        Change Dir: 'H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/CMakeScratch/TryCompile-ijp04u'
+        Change Dir: 'H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/CMakeScratch/TryCompile-18gno8'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_36e4f\\fast
-        	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_36e4f.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_36e4f.dir\\build
-        Building C object CMakeFiles/cmTC_36e4f.dir/testCCompiler.c.obj
-        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_36e4f.dir\\testCCompiler.c.obj.d --working-dir="H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ijp04u" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm1C29.tmp
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_1c636\\fast
+        	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_1c636.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_1c636.dir\\build
+        Building C object CMakeFiles/cmTC_1c636.dir/testCCompiler.c.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_1c636.dir\\testCCompiler.c.obj.d --working-dir="H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-18gno8" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm4E9F.tmp
         testCCompiler.c
-        Linking C executable cmTC_36e4f.exe
-        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_36e4f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_36e4f.dir\\objects1.rsp @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm1DB0.tmp
+        Linking C executable cmTC_1c636.exe
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_1c636.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_1c636.dir\\objects1.rsp @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm51BD.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_36e4f.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_36e4f.dir/embed.manifest
+        Create CMakeFiles\\cmTC_1c636.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_1c636.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_36e4f.dir/manifest.res CMakeFiles\\cmTC_36e4f.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_1c636.dir/manifest.res CMakeFiles\\cmTC_1c636.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_36e4f.dir\\objects1.rsp /out:cmTC_36e4f.exe /implib:cmTC_36e4f.lib /pdb:H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ijp04u\\cmTC_36e4f.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_36e4f.dir/intermediate.manifest CMakeFiles\\cmTC_36e4f.dir/manifest.res
+        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_1c636.dir\\objects1.rsp /out:cmTC_1c636.exe /implib:cmTC_1c636.lib /pdb:H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-18gno8\\cmTC_1c636.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_1c636.dir/intermediate.manifest CMakeFiles\\cmTC_1c636.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_36e4f.dir/intermediate.manifest /out:CMakeFiles\\cmTC_36e4f.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_1c636.dir/intermediate.manifest /out:CMakeFiles\\cmTC_1c636.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_36e4f.dir/manifest.res CMakeFiles\\cmTC_36e4f.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_1c636.dir/manifest.res CMakeFiles\\cmTC_1c636.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_36e4f.dir\\objects1.rsp /out:cmTC_36e4f.exe /implib:cmTC_36e4f.lib /pdb:H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ijp04u\\cmTC_36e4f.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_36e4f.dir/intermediate.manifest CMakeFiles\\cmTC_36e4f.dir/manifest.res
+        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_1c636.dir\\objects1.rsp /out:cmTC_1c636.exe /implib:cmTC_1c636.lib /pdb:H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-18gno8\\cmTC_1c636.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_1c636.dir/intermediate.manifest CMakeFiles\\cmTC_1c636.dir/manifest.res
         
       exitCode: 0
   -
@@ -1828,8 +1792,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/CMakeScratch/TryCompile-zroaap"
-      binary: "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/CMakeScratch/TryCompile-zroaap"
+      source: "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/CMakeScratch/TryCompile-xfwq3o"
+      binary: "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/CMakeScratch/TryCompile-xfwq3o"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1840,28 +1804,28 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/build/CMakeFiles/CMakeScratch/TryCompile-zroaap'
+        Change Dir: 'H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/build/CMakeFiles/CMakeScratch/TryCompile-xfwq3o'
         
-        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_2dfb1\\fast
-        	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_2dfb1.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_2dfb1.dir\\build
-        Building CXX object CMakeFiles/cmTC_2dfb1.dir/CMakeCXXCompilerABI.cpp.obj
-        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_2dfb1.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zroaap" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm258F.tmp
+        Run Build Command(s): "C:/Program Files/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_b6810\\fast
+        	"C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX86\\x86\\nmake.exe"  -f CMakeFiles\\cmTC_b6810.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_b6810.dir\\build
+        Building CXX object CMakeFiles/cmTC_b6810.dir/CMakeCXXCompilerABI.cpp.obj
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_b6810.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir="H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xfwq3o" --filter-prefix="Note: including file: " -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\cl.exe @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm5AB5.tmp
         CMakeCXXCompilerABI.cpp
-        Linking CXX executable cmTC_2dfb1.exe
-        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_2dfb1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_2dfb1.dir\\objects1.rsp @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm2745.tmp
+        Linking CXX executable cmTC_b6810.exe
+        	"C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1944 --intdir=CMakeFiles\\cmTC_b6810.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe --manifests -- C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b6810.dir\\objects1.rsp @C:\\Users\\adamb\\AppData\\Local\\Temp\\nm5C5C.tmp
         Visual Studio Incremental Link with embedded manifests
-        Create CMakeFiles\\cmTC_2dfb1.dir/manifest.rc
-        Create empty: CMakeFiles\\cmTC_2dfb1.dir/embed.manifest
+        Create CMakeFiles\\cmTC_b6810.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_b6810.dir/embed.manifest
         RC Pass 1:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_2dfb1.dir/manifest.res CMakeFiles\\cmTC_2dfb1.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b6810.dir/manifest.res CMakeFiles\\cmTC_b6810.dir/manifest.rc
         LINK Pass 1:
-        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_2dfb1.dir\\objects1.rsp /out:cmTC_2dfb1.exe /implib:cmTC_2dfb1.lib /pdb:H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zroaap\\cmTC_2dfb1.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2dfb1.dir/intermediate.manifest CMakeFiles\\cmTC_2dfb1.dir/manifest.res
+        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b6810.dir\\objects1.rsp /out:cmTC_b6810.exe /implib:cmTC_b6810.lib /pdb:H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xfwq3o\\cmTC_b6810.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b6810.dir/intermediate.manifest CMakeFiles\\cmTC_b6810.dir/manifest.res
         MT:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_2dfb1.dir/intermediate.manifest /out:CMakeFiles\\cmTC_2dfb1.dir/embed.manifest /notify_update
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\mt.exe /nologo /manifest CMakeFiles\\cmTC_b6810.dir/intermediate.manifest /out:CMakeFiles\\cmTC_b6810.dir/embed.manifest /notify_update
         RC Pass 2:
-        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_2dfb1.dir/manifest.res CMakeFiles\\cmTC_2dfb1.dir/manifest.rc
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100261~1.0\\x86\\rc.exe /fo CMakeFiles\\cmTC_b6810.dir/manifest.res CMakeFiles\\cmTC_b6810.dir/manifest.rc
         FINAL LINK:
-        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_2dfb1.dir\\objects1.rsp /out:cmTC_2dfb1.exe /implib:cmTC_2dfb1.lib /pdb:H:\\Games\\DC2DM\\DC2DMMesTextTool_GUI - Copy berantakan\\DC4Patch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zroaap\\cmTC_2dfb1.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_2dfb1.dir/intermediate.manifest CMakeFiles\\cmTC_2dfb1.dir/manifest.res
+        C:\\PROGRA~1\\MICROS~4\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1444~1.352\\bin\\Hostx86\\x86\\link.exe /nologo @CMakeFiles\\cmTC_b6810.dir\\objects1.rsp /out:cmTC_b6810.exe /implib:cmTC_b6810.lib /pdb:H:\\Games\\DC3PP\\DC3PPMesTextTool_GUI and Patch\\DC3PPPatch a\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xfwq3o\\cmTC_b6810.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_b6810.dir/intermediate.manifest CMakeFiles\\cmTC_b6810.dir/manifest.res
         
       exitCode: 0
   -

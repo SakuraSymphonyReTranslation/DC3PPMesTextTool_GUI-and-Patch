@@ -1,4 +1,4 @@
-H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/src/resource.h
+H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/src/resource.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/stdio.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/ucrt/corecrt.h
 C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/include/vcruntime.h

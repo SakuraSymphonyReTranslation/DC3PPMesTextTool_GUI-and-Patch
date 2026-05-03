@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/src/dc4patch.cpp" "CMakeFiles/DC4Patch.dir/src/dc4patch.cpp.obj" "msvc" "CMakeFiles/DC4Patch.dir/src/dc4patch.cpp.obj.d"
+  "H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/src/dc4patch.cpp" "CMakeFiles/DC4Patch.dir/src/dc4patch.cpp.obj" "msvc" "CMakeFiles/DC4Patch.dir/src/dc4patch.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
