@@ -4,7 +4,7 @@
 # compile CXX with C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.44.35207/bin/Hostx86/x86/cl.exe
 CXX_DEFINES = -DDC4Patch_EXPORTS
 
-CXX_INCLUDES = -IH:\Games\DC2DM\DC2DMM~1\DC4PAT~1\Detours\src
+CXX_INCLUDES = -IH:\Games\DC3PP\DC3PPM~1\DC3PPP~1\Detours\src
 
 CXX_FLAGS = /DWIN32 /D_WINDOWS /GR /EHsc /O2 /Ob2 /DNDEBUG -std:c++20 -MT
 

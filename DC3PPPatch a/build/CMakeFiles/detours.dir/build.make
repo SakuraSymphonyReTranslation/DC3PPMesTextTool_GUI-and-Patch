@@ -42,10 +42,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a"
+CMAKE_SOURCE_DIR = "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build"
+CMAKE_BINARY_DIR = "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles\detours.dir\depend.make
@@ -62,123 +62,123 @@ CMakeFiles\detours.dir\codegen:
 .PHONY : CMakeFiles\detours.dir\codegen
 
 CMakeFiles\detours.dir\Detours\src\detours.cpp.obj: CMakeFiles\detours.dir\flags.make
-CMakeFiles\detours.dir\Detours\src\detours.cpp.obj: "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\detours.cpp"
+CMakeFiles\detours.dir\Detours\src\detours.cpp.obj: "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\detours.cpp"
 CMakeFiles\detours.dir\Detours\src\detours.cpp.obj: CMakeFiles\detours.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detours.dir/Detours/src/detours.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\detours.cpp.obj.d --working-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\detours.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\detours.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/detours.dir/Detours/src/detours.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\detours.cpp.obj.d --working-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\detours.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\detours.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\detours.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/detours.dir/Detours/src/detours.cpp.i"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe > CMakeFiles\detours.dir\Detours\src\detours.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\detours.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\detours.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\detours.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/detours.dir/Detours/src/detours.cpp.s"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\detours.cpp.s /c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\detours.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\detours.cpp.s /c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\detours.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\modules.cpp.obj: CMakeFiles\detours.dir\flags.make
-CMakeFiles\detours.dir\Detours\src\modules.cpp.obj: "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\modules.cpp"
+CMakeFiles\detours.dir\Detours\src\modules.cpp.obj: "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\modules.cpp"
 CMakeFiles\detours.dir\Detours\src\modules.cpp.obj: CMakeFiles\detours.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/detours.dir/Detours/src/modules.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\modules.cpp.obj.d --working-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\modules.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\modules.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/detours.dir/Detours/src/modules.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\modules.cpp.obj.d --working-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\modules.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\modules.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\modules.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/detours.dir/Detours/src/modules.cpp.i"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe > CMakeFiles\detours.dir\Detours\src\modules.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\modules.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\modules.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\modules.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/detours.dir/Detours/src/modules.cpp.s"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\modules.cpp.s /c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\modules.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\modules.cpp.s /c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\modules.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\disasm.cpp.obj: CMakeFiles\detours.dir\flags.make
-CMakeFiles\detours.dir\Detours\src\disasm.cpp.obj: "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\disasm.cpp"
+CMakeFiles\detours.dir\Detours\src\disasm.cpp.obj: "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\disasm.cpp"
 CMakeFiles\detours.dir\Detours\src\disasm.cpp.obj: CMakeFiles\detours.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\disasm.cpp.obj.d --working-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\disasm.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\disasm.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/detours.dir/Detours/src/disasm.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\disasm.cpp.obj.d --working-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\disasm.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\disasm.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\disasm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/detours.dir/Detours/src/disasm.cpp.i"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe > CMakeFiles\detours.dir\Detours\src\disasm.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\disasm.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\disasm.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\disasm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/detours.dir/Detours/src/disasm.cpp.s"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\disasm.cpp.s /c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\disasm.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\disasm.cpp.s /c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\disasm.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\image.cpp.obj: CMakeFiles\detours.dir\flags.make
-CMakeFiles\detours.dir\Detours\src\image.cpp.obj: "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\image.cpp"
+CMakeFiles\detours.dir\Detours\src\image.cpp.obj: "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\image.cpp"
 CMakeFiles\detours.dir\Detours\src\image.cpp.obj: CMakeFiles\detours.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/detours.dir/Detours/src/image.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\image.cpp.obj.d --working-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\image.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\image.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/detours.dir/Detours/src/image.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\image.cpp.obj.d --working-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\image.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\image.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/detours.dir/Detours/src/image.cpp.i"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe > CMakeFiles\detours.dir\Detours\src\image.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\image.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\image.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/detours.dir/Detours/src/image.cpp.s"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\image.cpp.s /c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\image.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\image.cpp.s /c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\image.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\creatwth.cpp.obj: CMakeFiles\detours.dir\flags.make
-CMakeFiles\detours.dir\Detours\src\creatwth.cpp.obj: "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\creatwth.cpp"
+CMakeFiles\detours.dir\Detours\src\creatwth.cpp.obj: "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\creatwth.cpp"
 CMakeFiles\detours.dir\Detours\src\creatwth.cpp.obj: CMakeFiles\detours.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\creatwth.cpp.obj.d --working-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\creatwth.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\creatwth.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/detours.dir/Detours/src/creatwth.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\creatwth.cpp.obj.d --working-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\creatwth.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\creatwth.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\creatwth.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/detours.dir/Detours/src/creatwth.cpp.i"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe > CMakeFiles\detours.dir\Detours\src\creatwth.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\creatwth.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\creatwth.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\creatwth.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/detours.dir/Detours/src/creatwth.cpp.s"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\creatwth.cpp.s /c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\creatwth.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\creatwth.cpp.s /c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\creatwth.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\disolx86.cpp.obj: CMakeFiles\detours.dir\flags.make
-CMakeFiles\detours.dir\Detours\src\disolx86.cpp.obj: "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\disolx86.cpp"
+CMakeFiles\detours.dir\Detours\src\disolx86.cpp.obj: "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\disolx86.cpp"
 CMakeFiles\detours.dir\Detours\src\disolx86.cpp.obj: CMakeFiles\detours.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj"
-	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\disolx86.cpp.obj.d --working-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\disolx86.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\disolx86.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/detours.dir/Detours/src/disolx86.cpp.obj"
+	$(CMAKE_COMMAND) -E cmake_cl_compile_depends --dep-file=CMakeFiles\detours.dir\Detours\src\disolx86.cpp.obj.d --working-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build" --filter-prefix="Note: including file: " -- C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /showIncludes /FoCMakeFiles\detours.dir\Detours\src\disolx86.cpp.obj /FdCMakeFiles\detours.dir\detours.pdb /FS -c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\disolx86.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\disolx86.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/detours.dir/Detours/src/disolx86.cpp.i"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe > CMakeFiles\detours.dir\Detours\src\disolx86.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\disolx86.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\disolx86.cpp"
 <<
 
 CMakeFiles\detours.dir\Detours\src\disolx86.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/detours.dir/Detours/src/disolx86.cpp.s"
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\disolx86.cpp.s /c "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\Detours\src\disolx86.cpp"
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\detours.dir\Detours\src\disolx86.cpp.s /c "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\Detours\src\disolx86.cpp"
 <<
 
 # Object files for target detours
@@ -201,7 +201,7 @@ detours.lib: CMakeFiles\detours.dir\Detours\src\creatwth.cpp.obj
 detours.lib: CMakeFiles\detours.dir\Detours\src\disolx86.cpp.obj
 detours.lib: CMakeFiles\detours.dir\build.make
 detours.lib: CMakeFiles\detours.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library detours.lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library detours.lib"
 	$(CMAKE_COMMAND) -P CMakeFiles\detours.dir\cmake_clean_target.cmake
 	C:\PROGRA~1\MICROS~4\2022\ENTERP~1\VC\Tools\MSVC\1444~1.352\bin\Hostx86\x86\lib.exe /nologo /machine:X86 /out:detours.lib @CMakeFiles\detours.dir\objects1.rsp
 
@@ -214,6 +214,6 @@ CMakeFiles\detours.dir\clean:
 .PHONY : CMakeFiles\detours.dir\clean
 
 CMakeFiles\detours.dir\depend:
-	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a" "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a" "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build" "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build" "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles\detours.dir\DependInfo.cmake" "--color=$(COLOR)" detours
+	$(CMAKE_COMMAND) -E cmake_depends "NMake Makefiles" "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a" "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a" "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build" "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build" "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles\detours.dir\DependInfo.cmake" "--color=$(COLOR)" detours
 .PHONY : CMakeFiles\detours.dir\depend
 

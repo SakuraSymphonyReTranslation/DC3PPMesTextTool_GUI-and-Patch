@@ -1,5 +1,5 @@
-H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/Detours/src/disasm.cpp
-H:/Games/DC2DM/DC2DMMesTextTool_GUI - Copy berantakan/DC4Patch a/Detours/src/detours.h
+H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/Detours/src/disasm.cpp
+H:/Games/DC3PP/DC3PPMesTextTool_GUI and Patch/DC3PPPatch a/Detours/src/detours.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/um/windows.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winapifamily.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.26100.0/shared/winpackagefamily.h

@@ -2955,7 +2955,11 @@ static LONG WINAPI CrashLogger(EXCEPTION_POINTERS *ep) {
   if (code == EXCEPTION_ACCESS_VIOLATION || code == EXCEPTION_STACK_OVERFLOW ||
       code == EXCEPTION_ILLEGAL_INSTRUCTION ||
       code == EXCEPTION_PRIV_INSTRUCTION) {
-    FILE *f = fopen("dc4_crash.log", "a");
+    char tempPath[MAX_PATH];
+    GetTempPathA(MAX_PATH, tempPath);
+    char logPath[MAX_PATH];
+    sprintf_s(logPath, "%sDC3PP_crash.log", tempPath);
+    FILE *f = fopen(logPath, "a");
     if (f) {
       fprintf(f, "CRASH: code=0x%08X EIP=0x%08X", code, ep->ContextRecord->Eip);
       if (code == EXCEPTION_ACCESS_VIOLATION)

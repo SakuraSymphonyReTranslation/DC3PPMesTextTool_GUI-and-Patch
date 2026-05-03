@@ -43,10 +43,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a"
+CMAKE_SOURCE_DIR = "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build"
+CMAKE_BINARY_DIR = "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,14 +80,14 @@ clean: CMakeFiles\DC4Launcher.dir\clean
 CMakeFiles\detours.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\detours.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\detours.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\detours.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\detours.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=6,7,8,9,10,11,12 "Built target detours"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=6,7,8,9,10,11,12 "Built target detours"
 .PHONY : CMakeFiles\detours.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\detours.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" 7
+	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\detours.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" 0
 .PHONY : CMakeFiles\detours.dir\rule
 
 # Convenience name for target.
@@ -97,7 +97,7 @@ detours: CMakeFiles\detours.dir\rule
 # codegen rule for target.
 CMakeFiles\detours.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\detours.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\detours.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=6,7,8,9,10,11,12 "Finished codegen for target detours"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=6,7,8,9,10,11,12 "Finished codegen for target detours"
 .PHONY : CMakeFiles\detours.dir\codegen
 
 # clean rule for target.
@@ -112,14 +112,14 @@ CMakeFiles\detours.dir\clean:
 CMakeFiles\DC4Patch.dir\all: CMakeFiles\detours.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DC4Patch.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DC4Patch.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DC4Patch.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DC4Patch.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=4,5 "Built target DC4Patch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=4,5 "Built target DC4Patch"
 .PHONY : CMakeFiles\DC4Patch.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\DC4Patch.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" 9
+	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\DC4Patch.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" 0
 .PHONY : CMakeFiles\DC4Patch.dir\rule
 
 # Convenience name for target.
@@ -129,7 +129,7 @@ DC4Patch: CMakeFiles\DC4Patch.dir\rule
 # codegen rule for target.
 CMakeFiles\DC4Patch.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DC4Patch.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DC4Patch.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=4,5 "Finished codegen for target DC4Patch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=4,5 "Finished codegen for target DC4Patch"
 .PHONY : CMakeFiles\DC4Patch.dir\codegen
 
 # clean rule for target.
@@ -144,14 +144,14 @@ CMakeFiles\DC4Patch.dir\clean:
 CMakeFiles\DC4Launcher.dir\all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DC4Launcher.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DC4Launcher.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DC4Launcher.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DC4Launcher.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=1,2,3 "Built target DC4Launcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=1,2,3 "Built target DC4Launcher"
 .PHONY : CMakeFiles\DC4Launcher.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\DC4Launcher.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\DC4Launcher.dir\all
-	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" 0
 .PHONY : CMakeFiles\DC4Launcher.dir\rule
 
 # Convenience name for target.
@@ -161,7 +161,7 @@ DC4Launcher: CMakeFiles\DC4Launcher.dir\rule
 # codegen rule for target.
 CMakeFiles\DC4Launcher.dir\codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DC4Launcher.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\DC4Launcher.dir\codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC2DM\DC2DMMesTextTool_GUI - Copy berantakan\DC4Patch a\build\CMakeFiles" --progress-num=1,2,3 "Finished codegen for target DC4Launcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="H:\Games\DC3PP\DC3PPMesTextTool_GUI and Patch\DC3PPPatch a\build\CMakeFiles" --progress-num=1,2,3 "Finished codegen for target DC4Launcher"
 .PHONY : CMakeFiles\DC4Launcher.dir\codegen
 
 # clean rule for target.
