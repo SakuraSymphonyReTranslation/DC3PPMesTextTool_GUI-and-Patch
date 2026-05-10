@@ -87,6 +87,8 @@ private:
   int m_dialogueFontSizeOverride = -19;
   int m_backlogFontSizeOverride = -19;
   int m_dialogueLineSpacing = 0;
+  int m_dialogueXOffset = 0;
+  int m_dialogueYOffset = 0;
   int m_backlogNameFontSizeOverride = -11;
   int m_backlogXOffset = 0;
   int m_backlogLineSpacing = 0;
@@ -152,6 +154,9 @@ public:
             "BacklogNameYOffset=0\r\n"
             "BacklogNameSpacing=0\r\n"
             "BacklogDialogSpacing=0\r\n"
+            "DialogueXOffset=0\r\n"
+            "DialogueYOffset=0\r\n"
+            "DialogueLineSpacing=0\r\n"
             "AdvancedSettings=1\r\n"
             "\r\n"
             "[Settings]\r\n"
@@ -304,6 +309,8 @@ public:
     m_dialogueFontSizeOverride = ReadInt(L"DialogueSize", 19);
     m_backlogFontSizeOverride = ReadInt(L"BacklogSize", 19);
     m_dialogueLineSpacing = ReadInt(L"DialogueLineSpacing", 0);
+    m_dialogueXOffset = ReadInt(L"DialogueXOffset", 0);
+    m_dialogueYOffset = ReadInt(L"DialogueYOffset", 0);
     m_backlogNameFontSizeOverride = ReadInt(L"BacklogNameSize", 11);
     m_backlogXOffset = ReadInt(L"BacklogXOffset", 0);
     m_backlogLineSpacing = ReadInt(L"BacklogLineSpacing", 0);
@@ -455,7 +462,7 @@ public:
                                m_iniPath.c_str());
   }
 
-  void SetBacklogOffsets(int xOffset, int yOffset, int spacing, int nameXOffset, int nameYOffset, int nameSpacing, int dialogSpacing, int diagSpacing) {
+  void SetBacklogOffsets(int xOffset, int yOffset, int spacing, int nameXOffset, int nameYOffset, int nameSpacing, int dialogSpacing, int diagLineSpacing, int diagXOff, int diagYOff) {
     m_backlogXOffset = xOffset;
     m_backlogYOffset = yOffset;
     m_backlogLineSpacing = spacing;
@@ -463,7 +470,9 @@ public:
     m_backlogNameYOffset = nameYOffset;
     m_backlogNameSpacing = nameSpacing;
     m_backlogDialogSpacing = dialogSpacing;
-    m_dialogueLineSpacing = diagSpacing;
+    m_dialogueLineSpacing = diagLineSpacing;
+    m_dialogueXOffset = diagXOff;
+    m_dialogueYOffset = diagYOff;
     WritePrivateProfileStringW(L"Fonts", L"BacklogXOffset",
                                std::to_wstring(xOffset).c_str(),
                                m_iniPath.c_str());
@@ -484,6 +493,8 @@ public:
                                m_iniPath.c_str());
     WritePrivateProfileStringW(L"Fonts", L"BacklogDialogSpacing", std::to_wstring(dialogSpacing).c_str(), m_iniPath.c_str());
     WritePrivateProfileStringW(L"Fonts", L"DialogueLineSpacing", std::to_wstring(m_dialogueLineSpacing).c_str(), m_iniPath.c_str());
+    WritePrivateProfileStringW(L"Fonts", L"DialogueXOffset", std::to_wstring(m_dialogueXOffset).c_str(), m_iniPath.c_str());
+    WritePrivateProfileStringW(L"Fonts", L"DialogueYOffset", std::to_wstring(m_dialogueYOffset).c_str(), m_iniPath.c_str());
   }
 
   std::wstring GetDialogueFontName() const { return m_dialogueFontName; }
@@ -491,6 +502,8 @@ public:
   std::wstring GetBacklogNameFontName() const { return m_backlogNameFontName; }
   int GetDialogueFontSize() const { return m_dialogueFontSizeOverride; }
   int GetDialogueLineSpacing() const { return m_advancedSettings ? m_dialogueLineSpacing : 0; }
+  int GetDialogueXOffset() const { return m_advancedSettings ? m_dialogueXOffset : 0; }
+  int GetDialogueYOffset() const { return m_advancedSettings ? m_dialogueYOffset : 0; }
   int GetBacklogFontSize() const { return m_backlogFontSizeOverride; }
   int GetBacklogNameFontSize() const { return m_backlogNameFontSizeOverride; }
   int GetBacklogXOffset() const {
@@ -2050,6 +2063,16 @@ static DWORD WINAPI Hook_GetGlyphOutlineA(HDC hdc, UINT uChar, UINT fuFormat,
     }
   }
 
+  // Apply dialogue offsets when rendering dialogue text (not backlog)
+  if (r != GDI_ERROR && lpgm && !g_inBacklogRender) {
+    int dxOff = g_fontManager.GetDialogueXOffset();
+    int dyOff = g_fontManager.GetDialogueYOffset();
+    if (dxOff != 0 || dyOff != 0) {
+      lpgm->gmptGlyphOrigin.x += dxOff;
+      lpgm->gmptGlyphOrigin.y += dyOff;
+    }
+  }
+
   return r;
 }
 
@@ -2257,6 +2280,10 @@ static INT_PTR WINAPI Hook_DialogBoxParamA(HINSTANCE hInstance,
 #define IDC_LBL_BACKLOG_SIZE 1033
 #define IDC_LBL_DIALOGUE_LINE_SPACING 1034
 #define IDC_EDIT_DIALOGUE_LINE_SPACING 1035
+#define IDC_LBL_DIALOGUE_XOFFSET 1036
+#define IDC_EDIT_DIALOGUE_XOFFSET 1037
+#define IDC_LBL_DIALOGUE_YOFFSET 1038
+#define IDC_EDIT_DIALOGUE_YOFFSET 1039
 
 
 static INT_PTR CALLBACK AdvancedSettingsDialogProc(HWND hwndDlg, UINT uMsg,
@@ -2594,7 +2621,7 @@ static void ShowSettingsDialog() {
   pw = (WORD *)(pItem + 1);
   *pw++ = 0xFFFF;
   *pw++ = 0x0080; // Button class
-  const WCHAR *textAdv = L"Advanced Backlog Spacing...";
+  const WCHAR *textAdv = L"Advanced Settings...";
   wcscpy((WCHAR *)pw, textAdv);
   pw += wcslen(textAdv) + 1;
   *pw++ = 0;
@@ -2676,6 +2703,9 @@ static INT_PTR CALLBACK AdvancedSettingsDialogProc(HWND hwndDlg, UINT uMsg,
     SetDlgItemInt(hwndDlg, IDC_EDIT_NAME_YOFFSET, g_fontManager.GetBacklogNameYOffset(), TRUE);
     SetDlgItemInt(hwndDlg, IDC_EDIT_NAME_SPACING, g_fontManager.GetBacklogNameSpacing(), TRUE);
     SetDlgItemInt(hwndDlg, IDC_EDIT_DIALOG_SPACING, g_fontManager.GetBacklogDialogSpacing(), TRUE);
+    SetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_XOFFSET, g_fontManager.GetDialogueXOffset(), TRUE);
+    SetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_YOFFSET, g_fontManager.GetDialogueYOffset(), TRUE);
+    SetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_LINE_SPACING, g_fontManager.GetDialogueLineSpacing(), TRUE);
     return TRUE;
   }
 
@@ -2689,8 +2719,12 @@ static INT_PTR CALLBACK AdvancedSettingsDialogProc(HWND hwndDlg, UINT uMsg,
       int nameSpacing = GetDlgItemInt(hwndDlg, IDC_EDIT_NAME_SPACING, NULL, TRUE);
       int dialogSpacing = GetDlgItemInt(hwndDlg, IDC_EDIT_DIALOG_SPACING, NULL, TRUE);
 
+      int dialogueXOffset = GetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_XOFFSET, NULL, TRUE);
+      int dialogueYOffset = GetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_YOFFSET, NULL, TRUE);
+      int dialogueLineSpacing = GetDlgItemInt(hwndDlg, IDC_EDIT_DIALOGUE_LINE_SPACING, NULL, TRUE);
+
       g_fontManager.SetBacklogOffsets(xOffset, yOffset, spacing, nameXOffset,
-                                      nameYOffset, nameSpacing, dialogSpacing, g_fontManager.GetDialogueLineSpacing());
+                                      nameYOffset, nameSpacing, dialogSpacing, dialogueLineSpacing, dialogueXOffset, dialogueYOffset);
       g_fontManager.SetAdvancedSettings(true); // Implicitly enabled when used
       EndDialog(hwndDlg, IDOK);
       return TRUE;
@@ -2709,20 +2743,20 @@ static INT_PTR CALLBACK AdvancedSettingsDialogProc(HWND hwndDlg, UINT uMsg,
 }
 
 static void ShowAdvancedSettingsDialog(HWND parent) {
-  const int bufSize = 4096;
+  const int bufSize = 8192;
   BYTE *buffer = new BYTE[bufSize];
   memset(buffer, 0, bufSize);
   WORD *pw = (WORD *)buffer;
 
   DLGTEMPLATE *pDlg = (DLGTEMPLATE *)pw;
   pDlg->style = WS_POPUP | WS_BORDER | WS_SYSMENU | WS_CAPTION | DS_MODALFRAME | DS_CENTER | DS_SETFONT;
-  pDlg->cdit = 14; // 7 labels, 7 edits, 2 buttons
+  pDlg->cdit = 20; // 9 labels + 9 edits + 2 buttons
   pDlg->cx = 200;
-  pDlg->cy = 200;
+  pDlg->cy = 270;
 
   pw = (WORD *)(pDlg + 1);
   *pw++ = 0; *pw++ = 0;
-  wcscpy((WCHAR *)pw, L"Advanced Backlog Settings");
+  wcscpy((WCHAR *)pw, L"Advanced Settings");
   pw += wcslen((WCHAR *)pw) + 1;
   *pw++ = 9;
   wcscpy((WCHAR *)pw, L"Segoe UI");
@@ -2733,7 +2767,7 @@ static void ShowAdvancedSettingsDialog(HWND parent) {
     AlignDword(pw);
     DLGITEMTEMPLATE *pItem = (DLGITEMTEMPLATE *)pw;
     pItem->style = WS_CHILD | WS_VISIBLE | SS_LEFT;
-    pItem->x = 10; pItem->y = yPos + 2; pItem->cx = 100; pItem->cy = 14; pItem->id = idLbl;
+    pItem->x = 10; pItem->y = yPos + 2; pItem->cx = 125; pItem->cy = 14; pItem->id = idLbl;
     pw = (WORD *)(pItem + 1); *pw++ = 0xFFFF; *pw++ = 0x0082;
     wcscpy((WCHAR *)pw, labelText); pw += wcslen(labelText) + 1; *pw++ = 0;
 
@@ -2741,30 +2775,34 @@ static void ShowAdvancedSettingsDialog(HWND parent) {
     pItem = (DLGITEMTEMPLATE *)pw;
     pItem->style = WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP | ES_AUTOHSCROLL;
     pItem->dwExtendedStyle = WS_EX_CLIENTEDGE;
-    pItem->x = 115; pItem->y = yPos; pItem->cx = 40; pItem->cy = 14; pItem->id = idEdit;
+    pItem->x = 140; pItem->y = yPos; pItem->cx = 40; pItem->cy = 14; pItem->id = idEdit;
     pw = (WORD *)(pItem + 1); *pw++ = 0xFFFF; *pw++ = 0x0081;
     wcscpy((WCHAR *)pw, L""); pw += wcslen(L"") + 1; *pw++ = 0;
   };
 
-  // Line spacing moved to main menu
-  AddLabelAndEdit(IDC_LBL_XOFFSET, IDC_EDIT_XOFFSET, L"X Offset:", 30);
-  AddLabelAndEdit(IDC_LBL_YOFFSET, IDC_EDIT_YOFFSET, L"Y Offset:", 50);
-  AddLabelAndEdit(IDC_LBL_NAME_XOFFSET, IDC_EDIT_NAME_XOFFSET, L"Name X Offset:", 70);
-  AddLabelAndEdit(IDC_LBL_NAME_YOFFSET, IDC_EDIT_NAME_YOFFSET, L"Name Y Offset:", 90);
-  AddLabelAndEdit(IDC_LBL_NAME_SPACING, IDC_EDIT_NAME_SPACING, L"Name Ext Spacing:", 110);
-  AddLabelAndEdit(IDC_LBL_DIALOG_SPACING, IDC_EDIT_DIALOG_SPACING, L"Base Ext Spacing:", 130);
+  // Backlog settings
+  AddLabelAndEdit(IDC_LBL_XOFFSET, IDC_EDIT_XOFFSET, L"Backlog X Offset:", 10);
+  AddLabelAndEdit(IDC_LBL_YOFFSET, IDC_EDIT_YOFFSET, L"Backlog Y Offset:", 30);
+  AddLabelAndEdit(IDC_LBL_NAME_XOFFSET, IDC_EDIT_NAME_XOFFSET, L"Name X Offset:", 50);
+  AddLabelAndEdit(IDC_LBL_NAME_YOFFSET, IDC_EDIT_NAME_YOFFSET, L"Name Y Offset:", 70);
+  AddLabelAndEdit(IDC_LBL_NAME_SPACING, IDC_EDIT_NAME_SPACING, L"Name Ext Spacing:", 90);
+  AddLabelAndEdit(IDC_LBL_DIALOG_SPACING, IDC_EDIT_DIALOG_SPACING, L"Base Ext Spacing:", 110);
+  // Dialogue settings
+  AddLabelAndEdit(IDC_LBL_DIALOGUE_XOFFSET, IDC_EDIT_DIALOGUE_XOFFSET, L"Dialogue X Offset:", 135);
+  AddLabelAndEdit(IDC_LBL_DIALOGUE_YOFFSET, IDC_EDIT_DIALOGUE_YOFFSET, L"Dialogue Y Offset:", 155);
+  AddLabelAndEdit(IDC_LBL_DIALOGUE_LINE_SPACING, IDC_EDIT_DIALOGUE_LINE_SPACING, L"Dialogue Line Spacing:", 175);
 
   AlignDword(pw);
   DLGITEMTEMPLATE *pItem = (DLGITEMTEMPLATE *)pw;
   pItem->style = WS_CHILD | WS_VISIBLE | BS_DEFPUSHBUTTON | WS_TABSTOP;
-  pItem->x = 30; pItem->y = 160; pItem->cx = 50; pItem->cy = 16; pItem->id = IDC_BTN_OK;
+  pItem->x = 30; pItem->y = 210; pItem->cx = 50; pItem->cy = 16; pItem->id = IDC_BTN_OK;
   pw = (WORD *)(pItem + 1); *pw++ = 0xFFFF; *pw++ = 0x0080;
   wcscpy((WCHAR *)pw, L"OK"); pw += wcslen(L"OK") + 1; *pw++ = 0;
 
   AlignDword(pw);
   pItem = (DLGITEMTEMPLATE *)pw;
   pItem->style = WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON | WS_TABSTOP;
-  pItem->x = 100; pItem->y = 160; pItem->cx = 50; pItem->cy = 16; pItem->id = IDC_BTN_CANCEL;
+  pItem->x = 100; pItem->y = 210; pItem->cx = 50; pItem->cy = 16; pItem->id = IDC_BTN_CANCEL;
   pw = (WORD *)(pItem + 1); *pw++ = 0xFFFF; *pw++ = 0x0080;
   wcscpy((WCHAR *)pw, L"Cancel"); pw += wcslen(L"Cancel") + 1; *pw++ = 0;
 
