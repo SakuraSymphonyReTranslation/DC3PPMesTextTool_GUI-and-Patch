@@ -1,3 +1,4 @@
 obj/
 DC3PPPatch a/build*/
+!DC3PPPatch a/build/
 **/__pycache__/

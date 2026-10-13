@@ -147,7 +147,7 @@ Outputs: `DC3PPPatch a\build_dc3pp_win32\DC3PPPatch.dll` and `DC3PPLauncher.exe`
 
 Runtime source: [`dc3pppatch.cpp`](DC3PPPatch%20a/src/dc3pppatch.cpp). Native icons, line spacing, and transition reset: [`dc3pp_layout.h`](DC3PPPatch%20a/src/dc3pp_layout.h). See the [patch README](DC3PPPatch%20a/README.md) for more details.
 
-The local converter build is included in `bin/Release/net8.0-windows`. Intermediate `obj` files and native build folders are excluded from source control. Ready-to-use packages are also available in Releases.
+The local converter build is included in `bin/Release/net8.0-windows`, and the local patch package files are included in `DC3PPPatch a/build/Released`. Intermediate `obj` files and native CMake build folders such as `build_dc3pp_win32` are excluded from source control. Ready-to-use packages are also available in Releases.
 
 ## Credits and licenses
 
