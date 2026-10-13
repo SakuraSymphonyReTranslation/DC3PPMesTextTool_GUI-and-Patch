@@ -1,0 +1,4 @@
+bin/
+obj/
+DC3PPPatch a/build*/
+**/__pycache__/

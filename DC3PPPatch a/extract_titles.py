@@ -1,6 +1,12 @@
-import codecs
+from pathlib import Path
+import argparse
 
-with open(r"H:\Games\DC3PP\DC3PP.EXE", "rb") as f:
+parser = argparse.ArgumentParser(description='Extract Da Capo 3 Platinum Partner scenario titles')
+parser.add_argument('exe', type=Path)
+parser.add_argument('output', type=Path)
+args = parser.parse_args()
+
+with args.exe.open("rb") as f:
     data = f.read()
 
 # Extract scenario titles from known offset range
@@ -29,7 +35,7 @@ while i < end:
     i += 1
 
 # Write to INI format
-with open(r"H:\Games\DC3PP\DC3PPMesTextTool_GUI - Copy berantakan\DC4Patch a\scenario_titles.ini", "w", encoding="utf-8-sig") as f:
+with args.output.open("w", encoding="utf-8-sig") as f:
     f.write("[ScenarioTitles]\n")
     f.write("; Format: Japanese Title=Indonesian Translation\n")
     f.write("; Edit the right side of = to add your translation\n")
@@ -43,4 +49,4 @@ with open(r"H:\Games\DC3PP\DC3PPMesTextTool_GUI - Copy berantakan\DC4Patch a\sce
             count += 1
 
 print(f"Extracted {count} unique scenario titles")
-print("Saved to scenario_titles.ini")
+print(f"Saved to {args.output}")

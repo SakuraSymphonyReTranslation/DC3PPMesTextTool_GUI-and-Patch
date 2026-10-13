@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 
-namespace DC2DMMesTextTool
+namespace DC3PPMesTextTool
 {
     public class MesToolProcessor
     {
@@ -19,7 +19,7 @@ namespace DC2DMMesTextTool
         static MesToolProcessor()
         {
             Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-            ShiftJIS = Encoding.GetEncoding(932);
+            ShiftJIS = Encoding.GetEncoding(932, EncoderFallback.ExceptionFallback, DecoderFallback.ExceptionFallback);
         }
 
         public event Action<string>? Log;
@@ -82,10 +82,47 @@ namespace DC2DMMesTextTool
 
         private List<TextEntry> ProcessEntries(List<TextEntry> entries)
         {
-            return entries;
+            var processed = new List<TextEntry>();
+
+            for (int i = 0; i < entries.Count; i++)
+            {
+                var entry = entries[i];
+
+                // DC3PP stores a spoken line as two consecutive strings:
+                // opcode 0x4F = nameplate, opcode 0x50 = dialogue text.
+                // Pair by opcode; translated dialogue need not keep Japanese quotes.
+                if (entry.Opcode == 0x4F &&
+                    i + 1 < entries.Count &&
+                    entries[i + 1].Opcode == 0x50)
+                {
+                    var dialogue = entries[++i];
+                    processed.Add(new TextEntry
+                    {
+                        Offset = dialogue.Offset,
+                        OriginalLength = dialogue.OriginalLength,
+                        Opcode = dialogue.Opcode,
+                        IsEncrypted = dialogue.IsEncrypted,
+                        Name = entry.Message.Trim(),
+                        Message = dialogue.Message,
+                        IsChoice = dialogue.IsChoice
+                    });
+                    continue;
+                }
+
+                processed.Add(entry);
+            }
+
+            return processed;
         }
 
-        public int ImportJsonToMes(string jsonPath, string originalMesPath, string outputPath, int wrapWidth = 28)
+        private static bool IsDialogueMessage(string text)
+        {
+            string trimmed = text.TrimStart();
+            return trimmed.StartsWith("「", StringComparison.Ordinal) ||
+                   trimmed.StartsWith("『", StringComparison.Ordinal);
+        }
+
+        public int ImportJsonToMes(string jsonPath, string originalMesPath, string outputPath, int wrapWidth = TextFormatter.DefaultWidth)
         {
             LogMessage($"Importing {Path.GetFileName(jsonPath)}... ");
             
@@ -108,9 +145,14 @@ namespace DC2DMMesTextTool
                 var script = new MesScript();
                 script.Load(originalMesPath);
                 
-                var formatter = new TextFormatter { MaxLineLength = wrapWidth, MinLineLength = Math.Max(18, wrapWidth - 10) };
-                byte[] newMes = script.ImportText(expandedEntries, ShiftJIS, formatter);
+                TextFormatter.ValidateWidth(wrapWidth);
+                var formatter = new TextFormatter { MaxLineLength = wrapWidth };
+                var warnings = new List<LayoutWarning>();
+                byte[] newMes = script.ImportText(expandedEntries, ShiftJIS, formatter, warnings.Add);
                 File.WriteAllBytes(outputPath, newMes);
+                // Sidecar uses a distinct extension so BatchImport never treats it as dialogue JSON.
+                File.WriteAllText(outputPath + ".layout-report", JsonSerializer.Serialize(warnings, JsonOptions), Encoding.UTF8);
+                if (warnings.Count > 0) LogMessage($"Layout: {warnings.Count} entries to review in {Path.GetFileName(outputPath)}.layout-report");
                 
                 LogMessage($"OK ({entries.Count} entries -> {expandedEntries.Count} expanded)");
                 return 0;
@@ -180,6 +222,7 @@ namespace DC2DMMesTextTool
                 if (!File.Exists(mesFile))
                 {
                     LogMessage($"Skipping {baseName} - original MES not found");
+                    failed++;
                     continue;
                 }
                 

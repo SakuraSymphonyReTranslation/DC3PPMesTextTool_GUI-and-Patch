@@ -3,10 +3,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using DC2DMMesTextTool;
-using DC2DMMesTextTool_GUI;
+using DC3PPMesTextTool;
+using DC3PPMesTextTool_GUI;
 
-namespace DC2DMMesTextTool_GUI;
+namespace DC3PPMesTextTool_GUI;
 
 static class Program
 {
@@ -116,7 +116,7 @@ static class Program
         string mesFolder = args[1];
         string outputFolder = args.Length > 2 && !args[2].StartsWith("-") ? args[2] : Path.Combine(mesFolder, "mes_output");
         
-        int wrapWidth = 67;
+        int wrapWidth = TextFormatter.DefaultWidth;
         for (int i = 0; i < args.Length - 1; i++)
         {
             if (args[i] == "-w" && int.TryParse(args[i + 1], out int w))

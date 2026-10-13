@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace DC2DMMesTextTool;
+namespace DC3PPMesTextTool;
 
 /// <summary>
 /// MES script parser and text extractor.
@@ -31,7 +31,10 @@ public class MesScript
     public void Load(byte[] data, ScriptInfo? info = null)
     {
         _rawData = data;
-        _info = info ?? ScriptInfo.QueryFromData(data) ?? ScriptInfo.DC3PP;
+        if (info != null && !ReferenceEquals(info, ScriptInfo.DC3PP))
+            throw new InvalidDataException("Only Da Capo 3 Platinum Partner MES files are supported.");
+        _info = ScriptInfo.QueryFromData(data)
+            ?? throw new InvalidDataException("Unsupported MES format. This tool supports Da Capo 3 Platinum Partner only.");
         
         ParseStructure();
         TokenizeBytecode();
@@ -61,7 +64,7 @@ public class MesScript
             throw new InvalidDataException("Invalid MES structure");
             
         // Calculate ACTUAL number of labels based on available header space
-        // DC4 labels start at 8.
+        // DC3PP labels start at 8.
         int labelStartOffset = 4;
         if ((int)_info.OffsetType == (int)OffsetType.Offset2)
         {
@@ -90,7 +93,7 @@ public class MesScript
         // Check if header format implies version length
         if ((int)_info.OffsetType == (int)OffsetType.Offset2)
         {
-            return 3; // DC4 always uses 3 bytes (Version + Padding)
+            return 3; // DC3PP always uses 3 bytes (Version + Padding)
         }
         else if ((int)_info.OffsetType == (int)OffsetType.Offset1)
         {
@@ -193,6 +196,7 @@ public class MesScript
             }
                 
             text = CleanText(text);
+            if (isEncrypted) text = text.Replace('_', ' ');
             
             if (string.IsNullOrEmpty(text))
             {
@@ -221,29 +225,45 @@ public class MesScript
     public List<TextEntry> ExtractTextPatternBased(Encoding encoding)
     {
         // Fallback for when opcode extraction fails.
-        // For DC4, strict opcode extraction is preferred.
+        // For DC3PP, strict opcode extraction is preferred.
         // Returning empty list to satisfy build; if opcode extraction fails, we have bigger issues.
         return new List<TextEntry>();
     }
 
-    public byte[] ImportText(List<TextEntry> translatedEntries, Encoding encoding, TextFormatter? formatter = null)
+    public byte[] ImportText(List<TextEntry> translatedEntries, Encoding encoding, TextFormatter? formatter = null,
+        Action<LayoutWarning>? reportWarning = null)
     {
          // Re-extract original text to get offsets
         var originalEntries = ExtractText(encoding, false).ToList();
         
+        if (originalEntries.Count != translatedEntries.Count)
+            throw new InvalidDataException($"Slot count mismatch: MES has {originalEntries.Count}, JSON has {translatedEntries.Count}.");
+        encoding = Encoding.GetEncoding(encoding.CodePage, EncoderFallback.ExceptionFallback, DecoderFallback.ExceptionFallback);
         var translationMap = new Dictionary<int, string>();
-        for (int i = 0; i < Math.Min(originalEntries.Count, translatedEntries.Count); i++)
+        for (int i = 0; i < originalEntries.Count; i++)
         {
             var origEntry = originalEntries[i];
             var text = translatedEntries[i].Message;
             
-            if (formatter != null && !string.IsNullOrEmpty(text))
+            if (string.IsNullOrWhiteSpace(text) || text.Contains('\0'))
+                throw new InvalidDataException($"MES slot {i + 1}: text must be nonempty and contain no NUL.");
+            string normalized = TextFormatter.NormalizeForEngine(text);
+            if (normalized != text)
+                reportWarning?.Invoke(new(i + 1, "Normalized line endings or unsupported CP932 punctuation/accent.", normalized));
+            text = normalized;
+            bool body = origEntry.Opcode == 0x50 && !origEntry.IsChoice;
+            if (formatter != null && body)
             {
-                int originalMax = formatter.MaxLineLength;
-                if (origEntry.Opcode == 0x6A) formatter.MaxLineLength = 1000;
-                text = formatter.Format(text);
-                formatter.MaxLineLength = originalMax;
+                text = formatter.FormatBody(text);
             }
+            if (origEntry.Opcode == 0x4F && text.Contains('\n'))
+                throw new InvalidDataException($"MES slot {i + 1}: speaker names cannot contain newlines.");
+            try { _ = encoding.GetBytes(text); }
+            catch (EncoderFallbackException ex) { throw new InvalidDataException($"MES slot {i + 1}: text cannot be encoded as CP{encoding.CodePage}.", ex); }
+            if (body && text.Split('\n').Length > TextFormatter.RecommendedLines)
+                reportWarning?.Invoke(new(i + 1, $"{text.Split('\n').Length} lines; backlog card recommends at most 4.", text));
+            if (body && TextFormatter.RequiresNativeLayout(text) && !text.StartsWith("@s"))
+                reportWarning?.Invoke(new(i + 1, "Native layout retained for ruby/font controls; inspect in game.", text));
             
             translationMap[origEntry.Offset] = text;
         }
@@ -270,7 +290,7 @@ public class MesScript
         {
             long currentPos = bytecodeOutput.Position; // Position relative to start of bytecode
             
-            // C++ Logic: "Update label if we see Opcode 0x03 or 0x04" (for Offset2/DC4)
+            // C++ Logic: "Update label if we see Opcode 0x03 or 0x04" (for Offset2/DC3PP)
             if ((int)_info.OffsetType == (int)OffsetType.Offset2)
             {
                 if (token.Opcode == 0x03 || token.Opcode == 0x04)
@@ -278,14 +298,17 @@ public class MesScript
                     if (labelIndex < _labelCount)
                     {
                         // Calculate New Relative Offset 
-                        // DC4 uses offsets relative to the start of the bytecode section
-                        int newRelative = (int)currentPos + token.Length;
+                        // DC3PP uses offsets relative to the start of the bytecode section
+                        // Offset2 labels are relative to the start of the
+                        // version token, while currentPos is relative to the
+                        // executable bytecode after that token.
+                        int newRelative = (int)currentPos + versionLen + token.Length;
                         
                         // Read valid original label to preserve high bits (masks)
                         int oldLabel = BitConverter.ToInt32(newHeader, labelStartOffset + labelIndex * stride);
                         
                         // SAFETY: Only update if the old label looks like a valid pointer (in-bounds)
-                        // DC4 pointers are relative, so we check if it's < rawData length
+                        // DC3PP pointers are relative, so we check if it's < rawData length
                         int oldOffset = oldLabel & 0x00FFFFFF;
                         if (oldOffset < _rawData.Length) 
                         {
@@ -300,7 +323,7 @@ public class MesScript
             }
             else
             {
-                 // Fallback for non-DC4 (Offset1)
+                 // Fallback for the generic Offset1 layout
                  int tokenAbsStart = _bytecodeOffset + versionLen + token.Offset;
                  int tokenAbsEnd = tokenAbsStart + token.Length;
                  
@@ -349,13 +372,19 @@ public class MesScript
                         textBytes[i] = (byte)((textBytes[i] - _info.EncryptionKey) & 0xFF);
                     }
                 }
+                if (textBytes.Contains((byte)0))
+                    throw new InvalidDataException($"Text at MES offset {token.Offset:X} contains an encoded terminator.");
                 bytecodeOutput.WriteByte(token.Opcode);
                 bytecodeOutput.Write(textBytes, 0, textBytes.Length);
                 bytecodeOutput.WriteByte(0);
             }
             else
             {
-                bytecodeOutput.Write(_rawData, _bytecodeOffset + versionLen + token.Offset, token.Length);
+                int tokenAbsoluteOffset = _bytecodeOffset + versionLen + token.Offset;
+                if (!WriteNormalizedDc3PpSpriteCommand(bytecodeOutput, token, tokenAbsoluteOffset))
+                {
+                    bytecodeOutput.Write(_rawData, tokenAbsoluteOffset, token.Length);
+                }
             }
         }
         
@@ -369,7 +398,46 @@ public class MesScript
         
         return output.ToArray();
     }
-    
+
+    /// <summary>
+    /// DC3PP uses '?' as a runtime-selected size suffix in Aoi's BST commands.
+    /// The shipped Aoi container is AOI_N1_2.CRM and its internal entries also
+    /// use suffix "_2". On some configurations the engine resolves '?' to "1",
+    /// causing the command to be shown as text and the layered sprite to break.
+    /// Resolve only Aoi's BST wildcard here; the replacement is byte-for-byte
+    /// the same length, so branch labels and all following token offsets stay valid.
+    /// </summary>
+    private bool WriteNormalizedDc3PpSpriteCommand(Stream output, Token token, int tokenAbsoluteOffset)
+    {
+        if (!ReferenceEquals(_info, ScriptInfo.DC3PP) || token.Opcode != 0x2C || token.Length < 8)
+        {
+            return false;
+        }
+
+        // Opcode 0x2C is [op][arg1][string\0].
+        int stringOffset = tokenAbsoluteOffset + 2;
+        int stringLength = token.Length - 3;
+        ReadOnlySpan<byte> command = _rawData.AsSpan(stringOffset, stringLength);
+        ReadOnlySpan<byte> aoiPrefix = "BST\\AOI_"u8;
+
+        if (!command.StartsWith(aoiPrefix) || command.IndexOf((byte)'?') < 0)
+        {
+            return false;
+        }
+
+        byte[] normalizedToken = _rawData.AsSpan(tokenAbsoluteOffset, token.Length).ToArray();
+        for (int i = 2; i < normalizedToken.Length - 1; i++)
+        {
+            if (normalizedToken[i] == (byte)'?')
+            {
+                normalizedToken[i] = (byte)'2';
+            }
+        }
+
+        output.Write(normalizedToken, 0, normalizedToken.Length);
+        return true;
+    }
+
     private int GetNewTokenLength(Token token, Dictionary<int, string> translationMap, Encoding encoding)
     {
         bool isEncStr = _info.IsInSection(_info.EncStr, token.Opcode);

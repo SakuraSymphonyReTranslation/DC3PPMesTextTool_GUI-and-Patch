@@ -1,12 +1,12 @@
 /*
- * DC4 Patch Launcher
+ * DC3PP Patch Launcher
  *
- * Launches DC4.EXE with Japanese locale and injects DC4Patch.dll.
+ * Launches DC3PP.EXE with Japanese locale and injects DC3PPPatch.dll.
  *
  * On Wine/Proton: Sets Japanese locale in registry + LC_ALL=ja_JP.UTF-8.
  * On Windows:     Uses Locale Emulator (LoaderDll.dll), with silent fallback.
  *
- * Distribution: Only DC4Launcher.exe + DC4Patch.dll needed.
+ * Distribution: Only DC3PPLauncher.exe + DC3PPPatch.dll needed.
  */
 
 #define WIN32_LEAN_AND_MEAN
@@ -146,7 +146,7 @@ static bool InjectDLL(HANDLE hProcess, const char *dllPath) {
 // ============================================================================
 // Set Japanese locale in registry (Wine/Proton path)
 // Wine reads HKCU\Control Panel\International to determine ANSI codepage.
-// Setting these before launch makes DC4.EXE see Japanese locale (CP932).
+// Setting these before launch makes DC3PP.EXE see Japanese locale (CP932).
 // ============================================================================
 static void SetJapaneseLocaleRegistry() {
   HKEY hKey;
@@ -306,29 +306,14 @@ static bool LaunchWithLocaleEmulator(HINSTANCE hInstance, const char *exePath,
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
                    LPSTR lpCmdLine, int nCmdShow) {
   char currentDir[MAX_PATH];
-  GetCurrentDirectoryA(MAX_PATH, currentDir);
+  if (!GetModuleFileNameA(NULL, currentDir, MAX_PATH)) return 1;
+  char* lastSlash = strrchr(currentDir, '\\');
+  if (!lastSlash) return 1;
+  *lastSlash = 0;
+  SetCurrentDirectoryA(currentDir);
 
   char exePath[MAX_PATH];
   char dllPath[MAX_PATH];
-#ifdef GAME_DC4PH
-  sprintf_s(exePath, "%s\\DC4PHDL.EXE", currentDir);
-  sprintf_s(dllPath, "%s\\DC4PHPatch.dll", currentDir);
-
-  if (GetFileAttributesA(exePath) == INVALID_FILE_ATTRIBUTES) {
-    MessageBoxA(NULL,
-                "DC4PHDL.EXE not found!\nPlease place this launcher in the DC4 "
-                "Plus Harmony game folder.",
-                "DC4PH Patch Launcher", MB_ICONERROR);
-    return 1;
-  }
-  if (GetFileAttributesA(dllPath) == INVALID_FILE_ATTRIBUTES) {
-    MessageBoxA(NULL,
-                "DC4PHPatch.dll not found!\nPlease place DC4PHPatch.dll in the "
-                "game folder.",
-                "DC4PH Patch Launcher", MB_ICONERROR);
-    return 1;
-  }
-#else
   sprintf_s(exePath, "%s\\DC3PP.EXE", currentDir);
   sprintf_s(dllPath, "%s\\DC3PPPatch.dll", currentDir);
 
@@ -346,7 +331,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
                 "DC3PP Patch Launcher", MB_ICONERROR);
     return 1;
   }
-#endif
+
 
   PROCESS_INFORMATION pi = {};
   bool isWine = IsRunningUnderWine();

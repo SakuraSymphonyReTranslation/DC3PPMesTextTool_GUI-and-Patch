@@ -1,6 +1,6 @@
 using System.Globalization;
 
-namespace DC2DMMesTextTool;
+namespace DC3PPMesTextTool;
 
 /// <summary>
 /// Unicode range validation for filtering valid game text.

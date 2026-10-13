@@ -3,17 +3,20 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
+    <Version>1.2.0</Version>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>DC2DMMesTextTool_GUI</RootNamespace>
-    <StartupObject>DC2DMMesTextTool_GUI.Program</StartupObject>
+    <Product>Da Capo 3 Platinum Partner MES Text Tool</Product>
+    <Description>MES and JSON converter for Da Capo 3 Platinum Partner</Description>
+    <RootNamespace>DC3PPMesTextTool_GUI</RootNamespace>
+    <StartupObject>DC3PPMesTextTool_GUI.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="DC4Patch a\**" />
-    <EmbeddedResource Remove="DC4Patch a\**" />
-    <None Remove="DC4Patch a\**" />
+    <Compile Remove="DC3PPPatch a\**" />
+    <EmbeddedResource Remove="DC3PPPatch a\**" />
+    <None Remove="DC3PPPatch a\**" />
   </ItemGroup>
 
 </Project>

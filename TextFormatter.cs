@@ -1,173 +1,171 @@
 using System.Text;
+using System.Text.RegularExpressions;
 
-namespace DC2DMMesTextTool;
+namespace DC3PPMesTextTool;
 
-/// <summary>
-/// Text formatter with word wrap functionality.
-/// Ported from C++ MesTextTool's formater class.
-/// </summary>
+/// <summary>Wrapping for normal DC3PP story text, in half-width columns.</summary>
 public class TextFormatter
 {
-    // Characters that should not appear at the start of a line
-    private static readonly HashSet<char> DisallowedAtStart = new()
+    // 46 * 11px = 506px, allowing room for the outline in the narrower backlog.
+    // Vertical spacing belongs to DC3PPPatch.dll, not to the MES text stream.
+    public const int DefaultWidth = 46;
+    public int MinLineLength { get; set; } = 18; // Compatibility; wrapping uses MaxLineLength.
+    public const int RecommendedLines = 4;
+    public const int MinimumWidth = 10;
+    public const int MaximumWidth = 100;
+
+    private const string DisallowedAtStart = "。、，．？！：；）］｝」』】〉》’”!?.,:;)]}";
+    private const string DisallowedAtEnd = "（［｛「『【〈《‘“([{“";
+    private static readonly Regex Control = new(
+        @"\G@(?:se[0-9]+|[btwd][0-9]+|c(?:[0-9]{1,2}|[rgbwk])|[a-z])",
+        RegexOptions.Compiled);
+
+    public int MaxLineLength { get; set; } = DefaultWidth;
+
+    // CP932 has no em dash/Latin macrons. Use explicit readable equivalents,
+    // rather than the encoder's silent '?' replacement.
+    public static string NormalizeForEngine(string text) => NormalizeLineEndings(text)
+        .Replace('—', '―').Replace('é', 'e').Replace('ā', 'a').Replace('·', '・');
+
+    public string FormatBody(string text)
     {
-        '\u3002', '\u3001', '\uff1f', '\u2019', '\u201d', '\uff0c', '\uff01', '\uff5e', '\u3011', '\uff1b', '\uff1a', '\uff09', '\u300d', '\u300f', '\u2026', ' ', '\u3000'
-    };
-    
-    // Characters that should not appear at the end of a line
-    private static readonly HashSet<char> DisallowedAtEnd = new()
-    {
-        '\uff08', '(', '\u300c', '\u300e', '\u3010', '\u2018', '\u201c'
-    };
-    
-    public int MinLineLength { get; set; } = 18;
-    public int MaxLineLength { get; set; } = 67;
-    
-    /// <summary>
-    /// Check if text is dialogue (starts and ends with quote marks)
-    /// </summary>
-    private static bool IsTalking(string text)
-    {
-        if (text.Length < 2) return false;
-        
-        var quotes = new[] { ("\u300c", "\u300d"), ("\u300e", "\u300f"), ("\u201c", "\u201d") };
-        foreach (var (open, close) in quotes)
+        text = NormalizeForEngine(text);
+        string wrapped = Format(text);
+        if (!RequiresNativeLayout(text) && wrapped.Split('\n').Length > RecommendedLines)
         {
-            if (text.StartsWith(open) && text.EndsWith(close))
-                return true;
+            // @s selects the engine's native 16px font (normal is 22px).
+            // Keep the same physical width and all explicit paragraph breaks.
+            var compact = new TextFormatter { MaxLineLength = Math.Min(MaximumWidth, MaxLineLength * 22 / 16) };
+            return "@s" + compact.Format(text);
+        }
+        return wrapped;
+    }
+
+    public static string NormalizeLineEndings(string text) => text
+        .Replace("\r\n", "\n").Replace('\r', '\n')
+        .Replace("\\r\\n", "\n").Replace("\\n", "\n");
+
+    public static void ValidateWidth(int width)
+    {
+        if (width < MinimumWidth || width > MaximumWidth)
+            throw new ArgumentOutOfRangeException(nameof(width),
+                $"Wrap width must be {MinimumWidth}–{MaximumWidth} half-width columns.");
+    }
+
+    /// <summary>Ruby/font effects must not be split or restarted by the wrapper.</summary>
+    public static bool RequiresNativeLayout(string text)
+    {
+        if (text.Contains('｛')) return true;
+        for (int i = 0; i < text.Length; i++)
+        {
+            if (text[i] != '@') continue;
+            var match = Control.Match(text, i);
+            if (!match.Success) return true;
+            string value = match.Value;
+            bool timing = value.StartsWith("@se", StringComparison.Ordinal) ||
+                (value.Length > 2 && "btwd".Contains(value[1]) && char.IsAsciiDigit(value[2]));
+            if (!timing) return true;
+            i += value.Length - 1;
         }
         return false;
     }
-    
-    /// <summary>
-    /// Check if character is half-width (ASCII range)
-    /// </summary>
-    private static bool IsHalfWidth(char c)
+
+    private readonly record struct Unit(string Text, char Glyph, int Width)
     {
-        return c >= 0x0000 && c <= 0x007F;
+        public bool IsSpace => Glyph is ' ' or '　' or '\t';
     }
-    
-    /// <summary>
-    /// Get character width for line counting (half-width = 1.0, full-width = 2.0)
-    /// </summary>
-    private static float GetCharWidth(char c)
+
+    private static List<Unit> Tokenize(string line)
     {
-        return IsHalfWidth(c) ? 1.0f : 2.0f;
+        var units = new List<Unit>();
+        for (int i = 0; i < line.Length; i++)
+        {
+            var match = line[i] == '@' ? Control.Match(line, i) : null;
+            if (match?.Success == true)
+            {
+                units.Add(new Unit(match.Value, '\0', 0));
+                i += match.Length - 1;
+            }
+            else
+            {
+                char c = line[i];
+                units.Add(new Unit(c.ToString(), c,
+                    c <= 0x7f || c is >= '\uff61' and <= '\uff9f' ? 1 : 2));
+            }
+        }
+        return units;
     }
-    
-    /// <summary>
-    /// Format text with word wrapping.
-    /// </summary>
+
+    public static int MeasureLine(string line) => Tokenize(line).Sum(unit => unit.Width);
+
     public string Format(string text)
     {
-        if (string.IsNullOrEmpty(text))
-            return text;
-        
-        // Remove existing line breaks first
-        text = text.Replace("\\n　", "").Replace("\\n", "");
-        
-        if (text.Length <= MinLineLength)
-            return text;
-        
-        bool isTalking = IsTalking(text);
-        string lineBreak = "\n";
-        float lineBreakCount = 0.0f;
-        
+        ValidateWidth(MaxLineLength);
+        text = NormalizeLineEndings(text).Replace('_', ' ');
+        if (RequiresNativeLayout(text)) return text;
+        return string.Join("\n", text.Split('\n').Select(WrapLine));
+    }
+
+    private string WrapLine(string line)
+    {
+        var units = Tokenize(line);
         var result = new StringBuilder();
-        float lineCharCount = 0;
-        int index = 0;
-        
-        while (index < text.Length)
+        int start = 0;
+        while (start < units.Count)
         {
-            char thisChar = text[index];
-            
-            // Check if we should insert a line break
-            if (lineCharCount >= MinLineLength)
+            int fit = start;
+            int width = 0;
+            while (fit < units.Count && width + units[fit].Width <= MaxLineLength)
+                width += units[fit++].Width;
+
+            if (fit == units.Count)
             {
-                if (!DisallowedAtStart.Contains(thisChar))
-                {
-                    result.Append(lineBreak);
-                    lineCharCount = lineBreakCount;
-                }
+                AppendRange(start, fit);
+                break;
             }
-            
-            // Handle control codes like @t90@d1 - skip them for width calculation
-            if (thisChar == '@' && index + 1 < text.Length)
-            {
-                // Find end of control code
-                int codeEnd = index;
-                while (codeEnd < text.Length && text[codeEnd] != ' ' && !char.IsWhiteSpace(text[codeEnd]))
-                {
-                    if (codeEnd > index && !char.IsLetterOrDigit(text[codeEnd]) && text[codeEnd] != '@')
-                        break;
-                    codeEnd++;
-                    if (codeEnd - index > 10) break; // Safety limit
-                }
-                
-                // Copy control code without counting width
-                string code = text.Substring(index, codeEnd - index);
-                result.Append(code);
-                index = codeEnd;
-                continue;
-            }
-            
-            // Handle half-width character sequences (English words)
-            if (IsHalfWidth(thisChar) && thisChar != ' ')
-            {
-                // Find end of half-width sequence
-                int seqEnd = index;
-                while (seqEnd < text.Length && IsHalfWidth(text[seqEnd]) && text[seqEnd] != ' ')
-                {
-                    seqEnd++;
-                }
-                
-                string word = text.Substring(index, seqEnd - index);
-                float wordWidth = (float)word.Length;
-                
-                // Check if word fits on current line
-                if (lineCharCount + wordWidth >= MaxLineLength && lineCharCount > 0)
-                {
-                    result.Append(lineBreak);
-                    lineCharCount = lineBreakCount;
-                }
-                
-                result.Append(word);
-                lineCharCount += wordWidth;
-                index = seqEnd;
-                continue;
-            }
-            
-            // Full-width character
-            if (!IsHalfWidth(thisChar))
-            {
-                lineCharCount += 2.0f;
-            }
-            else if (thisChar == ' ')
-            {
-                lineCharCount += 1.0f;
-            }
-            
-            // Check max length for forced break
-            if (lineCharCount >= MaxLineLength)
-            {
-                if (!DisallowedAtStart.Contains(thisChar) && !DisallowedAtEnd.Contains(thisChar))
-                {
-                    result.Append(lineBreak);
-                    lineCharCount = lineBreakCount;
-                }
-            }
-            
-            // Check for line break before opening brackets
-            if (lineCharCount >= MinLineLength && DisallowedAtEnd.Contains(thisChar))
-            {
-                result.Append(lineBreak);
-                lineCharCount = isTalking ? 2.0f : 1.0f;
-            }
-            
-            result.Append(thisChar);
-            index++;
+
+            int split = FindBreak(fit, natural: true);
+            if (split <= start) split = FindBreak(fit, natural: false);
+            if (split <= start)
+                throw new InvalidDataException("Cannot wrap this punctuation sequence; add a manual newline.");
+
+            int end = split;
+            while (end > start && units[end - 1].IsSpace) end--;
+            AppendRange(start, end);
+            result.Append('\n');
+            start = split;
+            while (start < units.Count && units[start].IsSpace) start++;
         }
-        
         return result.ToString();
+
+        void AppendRange(int begin, int end)
+        {
+            for (int i = begin; i < end; i++) result.Append(units[i].Text);
+        }
+
+        int FindBreak(int limit, bool natural)
+        {
+            for (int split = limit; split > start; split--)
+            {
+                // Keep zero-width commands with the following visible text.
+                if (units[split - 1].Width == 0) continue;
+                int left = split - 1, right = split;
+                bool space = units[left].IsSpace;
+                while (left >= start && (units[left].IsSpace || units[left].Width == 0)) left--;
+                while (right < units.Count && (units[right].IsSpace || units[right].Width == 0))
+                {
+                    space |= units[right].IsSpace;
+                    right++;
+                }
+                if (left < start || right == units.Count) continue;
+                char previous = units[left].Glyph, next = units[right].Glyph;
+                if (DisallowedAtEnd.Contains(previous) || DisallowedAtStart.Contains(next)) continue;
+                if (!natural || space || units[left].Width == 2 || units[right].Width == 2)
+                    return split;
+            }
+            return -1;
+        }
     }
 }
+
+public sealed record LayoutWarning(int MesSlot, string Reason, string Message);

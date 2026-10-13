@@ -2,9 +2,9 @@ using System;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using DC2DMMesTextTool;
+using DC3PPMesTextTool;
 
-namespace DC2DMMesTextTool_GUI
+namespace DC3PPMesTextTool_GUI
 {
     public partial class MainForm : Form
     {
@@ -41,7 +41,7 @@ namespace DC2DMMesTextTool_GUI
 
         private void InitializeComponent()
         {
-            this.Text = "DC3PP MES Text Tool GUI";
+            this.Text = "Da Capo 3 Platinum Partner - MES Text Tool";
             this.Size = new Size(600, 500);
             
             var tabControl = new TabControl { Dock = DockStyle.Top, Height = 300 };
@@ -60,7 +60,7 @@ namespace DC2DMMesTextTool_GUI
             btnBrowseOutput.Click += (s, e) => BrowseSaveFile(_txtSingleOutput);
 
             var lblWrap = new Label { Text = "Word Wrap Width:", Top = 90, Left = 10, Width = 100 };
-            _numSingleWrap = new NumericUpDown { Top = 90, Left = 120, Width = 60, Minimum = 10, Maximum = 100, Value = 67 }; 
+            _numSingleWrap = new NumericUpDown { Top = 90, Left = 120, Width = 60, Minimum = 10, Maximum = 100, Value = TextFormatter.DefaultWidth };
 
             var btnExport = new Button { Text = "Export (MES -> JSON)", Top = 130, Left = 20, Width = 150 };
             btnExport.Click += (s, e) => RunSingleExport();
@@ -94,7 +94,7 @@ namespace DC2DMMesTextTool_GUI
             btnBrowseBatchOutput.Click += (s, e) => BrowseFolder(_txtBatchOutput);
 
             var lblBatchWrap = new Label { Text = "Word Wrap Width:", Top = 120, Left = 10, Width = 100 };
-            _numBatchWrap = new NumericUpDown { Top = 120, Left = 120, Width = 60, Minimum = 10, Maximum = 100, Value = 67 };
+            _numBatchWrap = new NumericUpDown { Top = 120, Left = 120, Width = 60, Minimum = 10, Maximum = 100, Value = TextFormatter.DefaultWidth };
 
             var btnBatchExport = new Button { Text = "Batch Export (MES -> JSON)", Top = 160, Left = 20, Width = 180 };
             btnBatchExport.Click += (s, e) => RunBatchExport();

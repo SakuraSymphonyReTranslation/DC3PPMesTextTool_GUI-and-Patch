@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace DC2DMMesTextTool;
+namespace DC3PPMesTextTool;
 
 /// <summary>
 /// Represents a text entry extracted from a MES script.
